@@ -54,3 +54,9 @@ a:hover {
     text-decoration: underline;
     color: rgb(233, 6, 6);
 }
+
+.roman__numerals {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: rgb(233, 6, 6);
+}
