@@ -39,13 +39,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.link__home {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.2em;
-}
-
 .link__text {
     color: rgb(27, 130, 240);
 }
