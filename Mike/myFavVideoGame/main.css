@@ -39,18 +39,17 @@ a:hover {
     text-decoration: underline;
 }
 
-.link__home {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.2em;
-}
-
 .link__text {
     color: rgb(27, 130, 240);
 }
 
 .underline {
     text-decoration: underline;
+    color: rgb(233, 6, 6);
+}
+
+.roman__numerals {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
     color: rgb(233, 6, 6);
 }
