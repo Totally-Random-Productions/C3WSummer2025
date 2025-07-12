@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Friend Application</title>
+</head>
+<style>
+    body {background-color: rgb(183, 241, 239);}
+</style>
+<body>
+    <h1>Best Friend Application</h1>
+    <h2>Form used to find another gremlin</h2>
+
+    <fieldset>
+        <legend>
+             <h3>The Basics</h3>
+        </legend>
+         <label for="">Full Name:
+        <input type="text" placeholder="e.g. John Doe">
+    </label>
+
+
+    <br>
+    <label for="">Preferred Nickname</label>
+    <input type="text" placeholder="Johnny Boy">
+
+    <br>
+    <label for="age-input">Age: </label>
+    <input type="number" id="age-input">
+
+    <br>
+    <label for="">Astrological Sign: </label>
+    <select name="" id="">
+        <option value="">Select sign</option>
+        <option value="Aries">Aries</option>
+        <option value="Gemini">Gemini</option>
+        <option value="Capricorn">Capricorn</option>
+        <option value="Taurus">Taurus</option>
+        <option value="Leo">Leo</option>
+        <option value="Pisces">Pisces</option>
+        <option value="Sagittarius">Sagittarius</option>
+        <option value="Libra">Libra</option>
+        <option value="Scorpio">Scorpio</option>
+    </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h3>Ideal Qualities</h3>
+        </legend>
+        <input type="checkbox">
+    <label for="">Had some kind of life changing moment we can bond about</label>
+    <br>
+    <input type="checkbox">
+    <label for="">Loves Gaming</label>
+    <br>
+    <input type="checkbox">
+    <label for="">Loves music and has a special connection with it</label>
+    <br>
+    <input type="checkbox">
+    <label for="">Loves cats</label>
+    <br>
+    <input type="checkbox">
+    <label for="">Loves motorbikes</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h3>Are you a listener or do you do the talking?</h3>
+        </legend>
+         <input type="radio" id="I'm a listener" name="listener_talker" value="listener">
+          <label for="I'm a listener">I'm a listener</label>
+          <br>
+          <input type="radio" id="I love to yap!" name="listener_talker" value="talker">
+          <label for="I'm a listener">I love to yap!</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h3>What colour would you want your car to be?</h3>
+        </legend>
+        <label for="carcolour">Select the colour here!</label>
+        <input type="color" id="carcolour" value="#052045">
+    </fieldset>
+    
+    <fieldset>
+        <legend>
+            <h3>The Important Stuff</h3>
+        </legend>
+        <label for="">
+        In 4000 words or more, can you explain to me why you would like to be my best friend?
+    </label>
+    <br>
+    <br>
+    <textarea placeholder="Please be honest...I really need honesty" cols="65" rows="12"></textarea>
+    </fieldset>
+
+    <br>
+    <br>
+    <button>Submit</button>
+</body>
+</html>
