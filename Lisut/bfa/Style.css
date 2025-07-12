@@ -1,0 +1,13 @@
+body{
+    background:linear-gradient(to right, lightblue,plum, pink)
+}
+
+h2{
+    font-family: Alice, Manufacturing Consent, Arial ;
+}
+h3{
+    font-family: consolas, Arial, Helvetica, sans-serif;
+} 
+p{
+    font-family: Nunito, Helvetica ;
+}
