@@ -42,6 +42,7 @@ body {
     margin: auto;
 }
 
+/* Card placement and layout using flexbox */
 .row {
     display: flex;
     flex-direction: row;
@@ -67,11 +68,13 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* Shows the active state of the card hen clicked */
 .card_item:active {
     transform: scale(0.95);
     opacity: 0.8;
 }
 
+/* Shos the hover state when the card is hovered over with the mouse */
 .card_item img:hover {
     transform: scale(1.05);
 }
