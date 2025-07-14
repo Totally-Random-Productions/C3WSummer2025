@@ -38,6 +38,13 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+/* Ion icon styles */
+ion-icon {
+  font-size: 1.5rem;
+  color: rgb(0, 102, 204);
+  display: block;
+}
+
 /* Card styles */
 .dev__card {
     display: flex;
@@ -59,6 +66,12 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     border: 3px solid rgb(204, 204, 204);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card__image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .dev__card h1 {
