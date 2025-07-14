@@ -38,6 +38,7 @@ body {
     border: 1px solid rgb(220, 220, 220);
 }
 
+/* Centers the container that houses the rows */
 .rows__container {
     margin: auto;
 }
@@ -48,7 +49,7 @@ body {
     flex-direction: row;
     width: 100%;
     gap: 0.2rem;
-    margin-bottom: 0.2rem
+    margin-bottom: 0.2rem;
 }
 
 .card_item {
