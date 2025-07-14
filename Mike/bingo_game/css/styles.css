@@ -71,7 +71,8 @@ body {
 /* Shows the active state of the card hen clicked */
 .card_item:active {
     transform: scale(0.95);
-    opacity: 0.8;
+    opacity: 0.5;
+    transition: transform 0.1s ease, opacity 0.1s ease;
 }
 
 /* Shos the hover state when the card is hovered over with the mouse */
@@ -88,6 +89,11 @@ body {
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
+    width: 80px; 
+    border-radius: 5px;
+    border: 1px solid rgb(180, 180, 180);
+    text-align: center;
+    line-height: 60px; 
 }
 
 .bingo__title {
