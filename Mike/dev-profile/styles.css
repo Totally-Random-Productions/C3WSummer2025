@@ -1,7 +1,7 @@
 *,*::before,*::after {
   box-sizing: border-box;
   margin: 0;
-    padding: 0;
+  padding: 0;
 }
 
 body {
@@ -50,80 +50,80 @@ ion-icon {
 
 /* Card styles */
 .dev__card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 550px;
-    gap: 1.5rem;
-    padding: 1rem;
-    border: 1px solid rgb(204, 204, 204);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(214, 204, 204, 0.5);
-    background-color: rgb(41,56,88);
-    color: rgba(216, 216, 14, 0.911);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 550px;
+  gap: 1.5rem;
+  padding: 1rem;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(214, 204, 204, 0.5);
+  background-color: rgb(41,56,88);
+  color: rgba(216, 216, 14, 0.911);
 }
 
 .card__image {
-    width: 450px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 0 auto;
-    border: 3px solid rgb(204, 204, 204);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 450px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 3px solid rgb(204, 204, 204);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .card__image:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .dev__card h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: rgba(216, 216, 14, 0.911);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: rgba(216, 216, 14, 0.911);
 
 }
 
 .dev__card p {
-    font-size: 1rem;
-    color: rgba(216, 216, 14, 0.911);
+  font-size: 1rem;
+  color: rgba(216, 216, 14, 0.911);
 }
 
 .skills__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem;
 }
 
 .skills__title {
-    width: 100%;
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: rgb(102, 102, 102);
+  width: 100%;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: rgb(102, 102, 102);
 }
 
 .skills__list li {
-    list-style: none;
-    padding: 0.5rem;
+  list-style: none;
+  padding: 0.5rem;
 }
 
 .contact__list {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
 }
 
 .contact__list a {
-    text-decoration: none;
-    color: rgba(216, 216, 14, 0.911);
-    font-size: 1.1rem;
-    transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  color: rgba(216, 216, 14, 0.911);
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
 }
 
 .contact__list a:hover {
-    text-decoration: underline;
-    color: rgba(182, 182, 79, 0.911);
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+  text-decoration: underline;
+  color: rgba(182, 182, 79, 0.911);
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
