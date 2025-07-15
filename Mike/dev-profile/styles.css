@@ -15,7 +15,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: rgba(241, 241, 145, 0.911);
 }
+
 html {
   /* Set a consistent font size */
   font-size: 16px;
