@@ -76,6 +76,13 @@ body {
     transition: transform 0.1s ease, opacity 0.1s ease;
 }
 
+/* This block of css responds to the javascript to keep the active state when an item is clicked */
+.card_item_clicked {
+    transform: scale(0.95);
+    opacity: 0.5;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
 /* Shos the hover state when the card is hovered over with the mouse */
 .card_item img:hover {
     transform: scale(1.05);
