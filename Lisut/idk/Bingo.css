@@ -1,6 +1,13 @@
 body{
     background-color: #b7dbff;
 }
+
+.head{
+    display: flex;
+    justify-self: center;
+
+}
+
 .bingo-card {
     background-image: url(/Lisut/Videogamead/imgs/night2.jpg);
     background-repeat: no-repeat;
@@ -16,6 +23,17 @@ body{
 h1{
     font-style: Merriweather, sans-serif;
     color: darkblue;
+}
+.Bingo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-self: center;
+    font-size:x-large;
+    font-family: Geneva, Verdana, sans-serif;
+    color: #800000;
+
 }
 
 .colum1,
@@ -69,35 +87,29 @@ img{
     width: 300px;
 }
 }
-p{
+span{
+    display: block;
+    margin: 0;
     justify-content: center;
     align-content: start;
-    padding: 20px;
     border-radius: 25px;
     text-overflow: hidden;
-    font-size: medium;
+    text-align: center;
+    text-justify: auto;
 }
 .box:hover{
-    background-color: blue;
+    background-color: #ff704d;
     font-size: 15px;
-    
 }
 .box:active{
-    background-color:burlywood;
+    background-color:#33cc33;
 }
 
-.input input{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
+/* remove to check the others ;-; i gave up and didn't want to use js */
 input{
     display: none;
 }
-input:checked+p{
+input:checked+span{
     display: inline-block;
     background-color: lightgreen;
     color: green;
