@@ -1,0 +1,119 @@
+/* Resets */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Container and layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 240, 240);
+    color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;  
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(192, 192, 171, 0.384);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(220, 220, 220);
+}
+
+/* Centers the container that houses the rows */
+.rows__container {
+    margin: auto;
+}
+
+/* Card placement and layout using flexbox */
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.card_item {
+    width: 80px; 
+    border-radius: 5px;
+    border: 1px solid rgb(180, 180, 180);
+    text-align: center;
+    line-height: 60px; 
+}
+
+.card_item img {
+    width: 100%;
+    height: 100px;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Shows the active state of the card hen clicked */
+.card_item:active {
+    transform: scale(0.95);
+    opacity: 0.2;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+/* This block of css responds to the javascript to keep the active state when an item is clicked */
+.card_item_clicked {
+    transform: scale(0.95);
+    opacity: 0.5;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+/* Shos the hover state when the card is hovered over with the mouse */
+.card_item img:hover {
+    transform: scale(1.05);
+}
+
+.bingo {
+    background-color: rgb(34, 43, 82);
+    color: rgb(248, 247, 240);
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    width: 80px; 
+    border-radius: 5px;
+    border: 1px solid rgb(180, 180, 180);
+    text-align: center;
+    line-height: 60px; 
+}
+
+.bingo__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: rgb(243, 15, 15);
+}
+
+.bingo__subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: rgb(240, 93, 93);
+}
+

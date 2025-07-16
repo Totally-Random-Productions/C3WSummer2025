@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFF Application</title>
+    <link href='https://fonts.googleapis.com/css?family=Faster One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bagel Fat One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'>
+    <style>
+        @keyframes background {
+            from{
+                background-color: aquamarine;
+            }to {
+                background-color: lavenderblush;
+            }
+        }
+        body{
+            margin: 0;
+            height: 100vh; /*full view*/
+            animation-name: background;
+            animation-duration: 4s;
+            animation-iteration-count: infinite; /*loop*/
+            animation-direction: alternate;  
+        }
+        h1{
+            font-family: 'Faster One' ;
+            text-align: center;
+            font-size: 70px;
+            margin: 0;
+            color: indigo;
+        }
+        h2{
+            font-family: 'Bagel Fat One';
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: slateblue;
+        }
+        label{
+            font-family: 'Barriecito';
+            text-align: left;
+            font-size: 25px;
+            margin: 0;
+            margin-left: 10px;
+            color: darkblue;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>BFF APPLICATION</h1>
+    <h2>About You</h2>
+    
+    <label for="Full Name">Full Name: </label>
+    <input type="text" placeholder="eg. Khalia Adassa Wilson" style="font-size: 20px;">
+    <br>
+    <label for="age input">Age: </label>
+    <input type="number" id="age-input" placeholder="eg.12" style="font-size: 20px;">
+    <br>
+    <label for="zodiac sign">Zodiac Sign: </label>
+    <select name="" id="" style="font-size: 20px;">
+        <option value="">Select your Sign </option>
+        <option value="Aries">Aries</option>
+        <option value="Taurus">Taurus</option>
+        <option value="Gemini">Gemini</option>
+        <option value="Cancer">Cancer</option>
+        <option value="Leo">Leo</option>
+        <option value="Virgo">Virgo</option>
+        <option value="Libra">Libra</option>
+        <option value="Scorpio">Scorpio</option>
+        <option value="Sagittarius">Sagittarius</option>
+        <option value="Capricorn">Capricorn</option>
+        <option value="Aquarius">Aquarius</option>
+        <option value="Pisces">Pisces</option>
+    </select>
+    <br>
+    <form action="">
+        <label for="Date of Birth">Birthday: </label>
+        <input type="date" id="date of birth" name="Birthday" style="font-size: 20px; margin-top: 10px;">
+        <br>
+        <label for="colour_favourite">Your Favourite Colour: </label>
+        <input type="color" id="colour_favourite" name="colour_favourite" value="#4CE459" style="font-size: 20px;">
+        <br>
+        <label for="Email">Email Address: </label>
+        <input type="email" id="Email" name="Email" style="font-size: 20px;" placeholder="eg. marco_25@gmail.com">
+        <br>
+        <label for="telephone">Whats your phone number?</label>
+        <input type="tel" id="telephone" name="phone" placeholder="eg. 876-XXX-XXXX" style="font-size: 20px;" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+        <br>
+        <label for="DC/Marvel">ONE MUST GO❌</label>
+        <br>
+        <input type="radio" id="DC" name="superhero universe" value="DC">
+        <label for="DC">DC</label>
+        <br>
+        <input type="radio" id="Marvel" name="superhero universe" value="Marvel">
+        <label for="Marvel">Marvel</label>
+    </form>
+
+    <h2 style="margin-top: 1px;">Do You Know Me?</h2>
+
+    <form action="">
+        <label for="my-fav-colour">What is my Favourite color? :</label>
+        <input type="color" id="my-fav-colour" name="my-fav-colour" value="#F80003" style="font-size: 20px;">
+        <br>
+    
+        <label for="my-fav-number">What is my Favourite number? :</label>
+        <input type="number" id="my-fav-number" name="my-fav-number" style="font-size: 20px;">
+    </form>
+    <h2 style="margin-top: 0;">What qualities best describe me?</h2>
+    <input type="checkbox" name="" id="">
+    <label for=""  style="margin-right: 15px;">My Sense of Humour</label>
+    <input type="checkbox" name="" id="">
+    <label for="">My Kindess</label>
+    <br>
+    <input type="checkbox" name="" id="">
+    <label for=""  style="margin-right: 15px;">My Ambition</label>
+    <input type="checkbox" name="" id="">
+    <label for="">My Chill Vibe</label>
+    <br>
+    <input type="checkbox" name="" id="">
+    <label for=""  style="margin-right: 15px;">My Talents</label>
+    <input type="checkbox" name="" id="">
+    <label for="">My Generosity</label>
+    <br>
+
+    <form action="">
+        <br>
+        <label for="my-crush";>Who's my crush?💗</label>
+        <input type="text" id="my-crush" name="my-crush" style="font-size: 20px;">
+    
+    <br>
+    
+        <label for="Love for TV">How much did I love Tyler Perry's Straw? (From 🙄 to 😭) </label>
+        <br>
+            <label for="Love for TV">🙄 </label>
+        <input type="range" id="Love for TV" name="Love for TV" min="0" max="50">
+            <label for="Love for TV">😭</label>
+    </form>
+    <br>
+
+    <label>In 500 words or more, tell me why should be my best friend </label>
+    <br>
+    <textarea style="margin-left: 15px;" placeholder="Embellish Alot" rows="10" cols="70"></textarea>
+    
+    <form action="">
+        <label for="BFF Application Submit"></label>
+        <input type="image" src="Submit.jpg" width="48" height="48">
+    </form>
+    
+</body>
+</html>
