@@ -1,0 +1,104 @@
+body{
+    background-color: #b7dbff;
+}
+.bingo-card {
+    background-image: url(/Lisut/Videogamead/imgs/night2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 650px;
+    height: 650px;
+    border: 3px solid darkblue;
+    border-radius: 50px;
+    display: flex;
+    justify-self: center;
+}
+h1{
+    font-style: Merriweather, sans-serif;
+    color: darkblue;
+}
+
+.colum1,
+.colum2,
+.colum3,
+.colum4,
+.colum5 {
+    border: 3px sold blue;
+    margin: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-self: center;
+    flex-direction: column;
+}
+
+.box {
+    border: 3px double blue;
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+    margin: 5px;
+}
+
+.l {
+    background-color: #99ccff;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.d {
+    background-color: #6699ff;
+    border-radius: 25px;
+}
+
+img {
+    width: 110px;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bingo {
+    img {
+        width: 250px;
+    }
+img{
+    width: 300px;
+}
+}
+p{
+    justify-content: center;
+    align-content: start;
+    padding: 20px;
+    border-radius: 25px;
+    text-overflow: hidden;
+    font-size: medium;
+}
+.box:hover{
+    background-color: blue;
+    font-size: 15px;
+    
+}
+.box:active{
+    background-color:burlywood;
+}
+
+.input input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+input{
+    display: none;
+}
+input:checked+p{
+    display: inline-block;
+    background-color: lightgreen;
+    color: green;
+}
