@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="600" height="400" id="svg4611">
+  <defs id="defs4614">
+    <radialGradient cx="400" cy="300" r="400" fx="400" fy="300" id="radialGradient4609" xlink:href="#linearGradient4181" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.75,0,0,0.5,-1.5820312e-7,50)"/>
+  </defs>
+ 
+<rect fill="#ffffff" width="600" height="400"/>
+
+  <path d="M 295.08979,404.20093 L 141.76368,295.47988 L -12.042533,403.52065 L 43.976957,224.1022 L -106.30466,111.21024 L 81.643401,109.04459 L 142.57047,-68.767258 L 202.70927,109.31275 L 390.64588,112.31095 L 239.86565,224.53609 L 295.08979,404.20093 z " transform="matrix(0.66405,0,0,0.6977213,205.59161,67.980401)" style="opacity:1;fill:#0000cd;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="path4605"/>
+  
+  <polygon opacity="0.5" points="583,17 583,383 17,383 0,400 600,400 600,0 "/>
+<polygon opacity="0.5" fill="#FFFFFF" points="17,383 17,17 583,17 600,0 0,0 0,400 "/>
+<line opacity="0.5" fill="none" stroke="#FFFFFF" x1="0" y1="0" x2="17" y2="17"/>
+
+</svg>
