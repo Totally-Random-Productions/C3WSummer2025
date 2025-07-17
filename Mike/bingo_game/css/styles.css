@@ -28,13 +28,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;  
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(192, 192, 171, 0.1);
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
     border: 1px solid rgb(220, 220, 220);
 }
 
@@ -72,6 +71,13 @@ body {
 /* Shows the active state of the card hen clicked */
 .card_item:active {
     transform: scale(0.95);
+    opacity: 0.2;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+/* This block of css responds to the javascript to keep the active state when an item is clicked */
+.card_item_clicked {
+    transform: scale(0.95);
     opacity: 0.5;
     transition: transform 0.1s ease, opacity 0.1s ease;
 }
@@ -99,15 +105,15 @@ body {
 
 .bingo__title {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: rgb(34, 34, 34);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: rgb(243, 15, 15);
 }
 
 .bingo__subtitle {
     text-align: center;
     font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: rgb(85, 85, 85);
+    margin-bottom: 10px;
+    color: rgb(240, 93, 93);
 }
 
