@@ -138,12 +138,43 @@ img {
 }
 
 /* Responsive styles */
-@media (max-width: 600px) {
+@media (min-width: 600px) {
+
     .card {
-        width: 70%;
+        width: 650px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card__title {
+        font-size: 2.5rem;
+        text-align: center;
+    }    
+
+    .card__description {
+        font-size: 1.1rem;
+        color: rgb(247, 245, 245);
+        text-align: center;
     }
 
     .my__image {
-        height: 40vh; /* Adjust image height for smaller screens */
+        object-fit: cover;
+        width: 50%;
+        height: 45vh;
+        border-radius: 10px 0 0 10px; /* Rounded corners for the left side of the card */
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.2rem;
+    }
+
+    .card__footer {
+        padding: 10px 20px;
+        text-align: center;
     }
 }
