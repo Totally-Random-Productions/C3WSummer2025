@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Atomic Age' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bruno Ace' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overall{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .profile-card{
+            
+            padding-top: 0;
+            padding-bottom: 50px;
+            background-color: aqua;
+            height: 350px;
+            width: 1200px;
+            border: 10px double rgb(5, 77, 77);
+            border-radius: 100px;
+        }
+        .square{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            border: 10px solid aqua;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+        }
+        img{
+            height: 350px;
+            width: 320px;
+            border-radius: 330px; 
+        }
+        .contact-info{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            font-family: 'Bruno Ace';
+        }
+        .contact-info img{
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+        h2{
+            font-family: 'Atomic Age';
+            font-size: 28px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+        h3{
+            font-family: 'Bruno Ace';
+            font-size: 15px;
+           
+        }
+        .about-me{
+            font-family: 'Charm';
+            font-size: 15px;
+        }
+        h1{
+            font-family: 'Bungee Shade';
+            font-size: 30px;
+        }
+        .profile-photo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            margin-left: -20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overall">
+        <h1>MY PROFILE CARD</h1>
+        <div class="profile-card">
+            <div class="row">
+                <div class="square edge" style="margin-left: 40px; margin-top: 20px; text-align: center;">
+                    <h2>Avanique Weir</h2>
+                    <div>
+                        <h3>Biomedical Engineering Student</h3>
+                        <p class="about-me">
+                            "Dedicated Student of Biomedical Engineering with firsthand exposure to project
+                            development concerning modern day health devices and monitoring technology. Has a
+                            great zeal and enthusiasm for engineering and innovation and is eager to contribute to
+                            company progress and development with any assigned tasks."
+                        </p>
+                        <br>
+                        <img class="contact-info" src="images/pexels-photo-6153740-removebg-preview.png" alt="" style="width: 120px; height: 120px; margin: -50px; margin-left: 80px;" >
+                    </div>
+                </div>
+                <div class="square" style="background-color: aqua; border: aqua">
+                    <img src="images/round_profil_picture_before_.webp" alt="" class="profile-photo">
+                </div>
+                <div class="square edge" style="margin-right: 40px; margin-top: 20px; margin-left: -20px;">
+                    <h2 style="margin-bottom: 30px;">Contact Information</h2>
+                    
+                    <div class="contact-info">
+                        <img src="images/download.png" alt="">
+                        <p>bmed_engineer@gmail.com</p>
+                    </div>
+
+                     <div class="contact-info">
+                        <img src="images/insta.jpeg" alt="">
+                        <p>@bmed_prodigy</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <img src="images/whatsapp.jpeg" alt="">
+                        <p>(678)845-9376</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
