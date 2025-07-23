@@ -10,6 +10,13 @@ function displayInfo() {
   output.textContent =  `Welcome,${name}! We see you are ${age} years old and live in ${city}. We will send a confirmation to your email at ${email}`;
 
 
+   // Bonus: Simple validation
+  if (!name || !email || !age || !city || isNaN(age) || age <= 0) {
+    output.textContent = "Please fill in all fields with valid information.";
+    output.style.color = "red";
+    return;
+  }
+
 }
 
 
