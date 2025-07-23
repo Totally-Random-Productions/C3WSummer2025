@@ -6,7 +6,7 @@
                     return false;
                 }
                 else{
-                var namesDiv = document.getElementById("name-input");
+                        var namesDiv = document.getElementById("name-input");
                     }
 
                 var ageDiv = document.getElementById("age-input");
@@ -15,7 +15,7 @@
                     return false;
                 }
                 else{
-                var ageDiv = document.getElementById("age-input");
+                        var ageDiv = document.getElementById("age-input");
                     }
 
                 var cityDiv = document.getElementById("city-input");
@@ -24,7 +24,7 @@
                     return false;
                 }
                 else{
-                var cityDiv = document.getElementById("city-input");
+                        var cityDiv = document.getElementById("city-input");
                     }
 
                 var emailDiv = document.getElementById("email-input");
@@ -33,7 +33,7 @@
                     return false;
                 }
                 else{
-                var emailDiv = document.getElementById("email-input");
+                        var emailDiv = document.getElementById("email-input");
                     }
 
                 var welcome_box = document.getElementById("entered-data");
