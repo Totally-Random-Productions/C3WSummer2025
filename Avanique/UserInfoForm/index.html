@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <div class="base">
+        <div class="base2">
+
+            <div class="title">
+                User Info
+            </div>
+
+            <div class="name user-data">
+                <label for="name">
+                    Name: 
+                </label>
+                <br>
+                <input class="user-input" type="text" name="" id="name-input">
+            </div>
+            <br>
+
+            <div class="age user-data">
+                <label for="age">
+                    Age: 
+                </label>
+                <br>
+                <input class="user-input" type="number" name="" id="age-input">
+            </div>
+            <br>
+
+            <div class="city user-data">
+                <label for="city">
+                    City:
+                </label>
+                <br>
+                <input class="user-input" type="text" name="" id="city-input">
+            </div>
+            <br>
+
+            <div class="email user-data">
+                <label for="email">
+                    Email:
+                </label>
+                <br>
+                <input class="user-input" type="email" name="" id="email-input">
+            </div>
+            <br>
+
+            <div class="submit">
+                <input class="submit-button" type="button" value="Submit" onclick="displayData()">
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <div class="entered-data" id="entered-data">
+        <label for="welcome">Welcome User!</label>
+        <br>
+        <img src="avatar-1577909_640.webp" alt="">
+        <p id="user-info"></p>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
