@@ -1,0 +1,183 @@
+/* Resets */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles, centering the card */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+    font-family: outfit, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(65, 45, 238);
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    color: rgb(246, 246, 250);
+}
+
+/* Image resets */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Card styles */
+.card {
+    background-color: rgb(65, 45, 238);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+}
+
+.card__body {
+    padding: 20px;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: rgb(247, 245, 245);
+}
+
+.card__description {
+    font-size: 1.1rem;
+    color: rgb(247, 245, 245);
+}
+
+.my__image {
+    object-fit: cover;
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top of the card */
+}
+
+.my__image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.my__image:active {
+    transform: scale(1);
+    transition: transform 0.1s ease;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.socials ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 1rem 0.5rem;
+}
+
+.socials ul li a {
+    text-decoration: none;
+    color: rgb(247, 245, 245);
+    font-size: 2.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: scale(0.9);
+    display: inline-block;
+}
+
+.socials ul li a:hover {
+    color: rgb(127, 219, 247);
+    transition: color 0.3s ease;
+    transform: scale(1);
+}
+
+/* Hover effects for the card */
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.card__footer {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.card__btn {
+    background-color: rgb(247, 245, 245);
+    color: rgb(29, 16, 146);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card__btn:hover {
+    background-color: rgb(127, 219, 247);
+    color: rgb(247, 245, 245);
+    transition: background-color 0.3s ease;
+}
+
+.card__btn:active {
+    background-color: rgb(210, 210, 210);
+    transition: background-color 0.1s ease;
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+
+    .card {
+        width: 650px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card__title {
+        font-size: 2.5rem;
+        text-align: center;
+    }    
+
+    .card__description {
+        font-size: 1.1rem;
+        color: rgb(247, 245, 245);
+        text-align: center;
+    }
+
+    .my__image {
+        object-fit: cover;
+        width: 50%;
+        height: 45vh;
+        border-radius: 10px 0 0 10px; /* Rounded corners for the left side of the card */
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.2rem;
+    }
+
+    .card__footer {
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
