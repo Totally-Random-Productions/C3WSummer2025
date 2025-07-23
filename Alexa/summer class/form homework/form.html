@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+          <script defer src="script.js"></script>
+</head>
+<body>
+
+   
+
+
+<div class="background" ></div>
+<form action="" method="get">
+    <div class="sign-up">
+        <h1 class="text">Please sign-up below</h1>
+        <label class="text" for="">Full Name</label>
+        <input type="text" id="name">
+        <br> <br>
+
+        <label class="text "for="">Preferred Email</label>
+        <input class="text" type="email" name="" id="email">
+        <br> <br>
+
+        <label for="" class="text" >Your Age</label>
+        <input type="number" id="age">
+        <br> <br>
+
+        <label for="" class="text" >City of Residence</label>
+        <input type="text" id="city">
+        <br> <br>
+        
+        <input class="btn" type="button" value="Submit" onclick="infoReplace(); displayText();">
+
+        <br> <br>
+        <p class="text" id="info-text" style="display: none;">Thank you for signing up, <span id="name-blank">__</span>. According to the information entered, you are <span id="age-blank">__ years old</span> and you live in <span id="city-blank">__</span>. We will go ahead and send you a conirmation email at <span id="email-blank">__</span>.</p>
+
+    </div>
+  </form>
+  </div>
+       
+</body>
+</html>
