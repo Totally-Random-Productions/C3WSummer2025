@@ -9,13 +9,14 @@ submitButton.addEventListener('click', function(event) {
 
         let isValid = true;
 
-        // Validate inputs (optional, can be enhanced)
+        // Validate inputs 
         inputs.forEach(input => {
             if (input.value.trim() === '') {
                 isValid = false;
                 input.classList.add('error'); // Add a red border
             } else {
-                input.classList.remove('error');
+                input.classList.add('valid'); // Add a green border
+                input.classList.remove('error'); // Remove red border if valid
             }
         });
 
@@ -26,6 +27,7 @@ submitButton.addEventListener('click', function(event) {
             const age = inputs[2].value;
             const city = inputs[4].value;
 
+            // Store data in localStorage
             localStorage.setItem('formData', JSON.stringify({ name, email, age, city }));
 
             // Redirect to confirmation page
