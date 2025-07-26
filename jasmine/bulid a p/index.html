@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+  <title>Build a Partner</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Delusional Romantic Fantasy</h1>
+  </div>
+
+  <div class="container">
+    <form id="myForm">
+      <p class="para">
+        That glorious day when I met
+
+        <span id="nameValue">
+          <label for="name-input">
+
+            <input type="text" id="name-input" placeholder="Name" />
+
+          </label>
+        </span>
+
+        , a beautiful
+        <span id="ageValue">
+          <label for="age-input">
+            <input type="number" id="age-input" placeholder="Age" />
+          </label>
+        </span>
+
+        <!-- <div class="radio-group"> -->
+        <span id="gender">
+          <label for="female">
+            <input type="radio" value="female" name="gender-info" id="female" />
+            Female
+          </label>
+
+          <label for="male">
+            <input type="radio" value="male" name="gender-info" id="male" />
+            Male 
+            <!--aDD SOME PEZAZ-->
+          </label>
+
+          <label for="nonbinary">
+            <input type="radio" value="nonbinary" name="gender-info" id="nonbinary" />
+             Non-Binary 
+          </label>
+
+          <label for="trans">
+            <input type="radio" value="trans" name="gender-info" id="trans" />
+            Trans 
+          </label>
+
+          <label for="nosat">
+            <input type="radio" value="I prefer not to say" name="gender-info" id="nosat"/>
+             I Prefer Not to Say
+          </label>
+        </span>
+
+        <!-- </div> -->
+        year old person. We met at the
+        <span id="location">
+          <label for="met">
+
+            <input type="text" placeholder="Met where" id="met" />
+          </label>
+        </span>
+
+        on the
+        <span id="nation">
+          <label for="country">
+            <input type="text" placeholder="Country" id="country" />
+          </label>
+        </span>
+        countryside. I thought it was a prank when this
+        <span id="heightValue">
+          <label for="height">
+            <input type="number" placeholder="Height" id="height" />
+          </label>
+        </span>
+
+        cm shadow got out of their
+        <span id="whip">
+          <label for="cars"> <!--Checkboxes-->
+            <select name="cars" id="cars">
+              <option value="default">Choose Car</option>
+              <option value="laferrari">LaFerrari</option>
+              <option value="mcclaren">McClaren</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+              <option value="porsche">Porsche</option>
+            </select>
+          </label>
+        </span>
+
+        sportscar, with a magnetic force pulling me into their orbit. My first thought was I
+        hope they don't mind that I
+
+        <span id="shhh">
+          <label for="secret">
+            <input type="text" placeholder="Secret" id="secret" />
+          </label>
+        </span>
+
+        . I hope we'll live happily ever after.
+      </p>
+
+      <button type="submit" class="btn" onclick="validateItems()">
+        Submit
+      </button>
+      <button type="reset" class="btn" onclick="freshStart()" >Reset</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
