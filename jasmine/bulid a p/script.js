@@ -21,9 +21,13 @@ var heightSpan = document.getElementById("heightValue");
 var secretSpan = document.getElementById("shhh");
 var carSpan = document.getElementById("whip");
 
+var paragraph = document.getElementById("para");
+
 
 function updatePara() {
   document.body.style.backgroundImage = 'url("img pack/sagura.gif")';
+  paragraph.setAttribute("style", "color: #f96fc7");
+  
   nameoSpan.innerHTML = nameo.value;
   ageSpan.innerHTML = age.value;
 

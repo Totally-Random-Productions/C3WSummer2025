@@ -9,16 +9,27 @@ body{
 
 .header{
     text-align: center;
-    color: #cf1089;
-    text-shadow:
-        0 0 7px #fff, /* Inner glow, tight to text */
+    color: #f96fc7;
+    /* filter: drop-shadow(
+        0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #ffffff,
-        0 0 42px #1b53ae, /* Outer glow, vibrant neon color */
+        0 0 42px #1b53ae, 
         0 0 82px #1b53ae,
         0 0 92px #1b53ae,
         0 0 102px #1b53ae,
-        0 0 151px #1b53ae;
+        0 0 151px #1b53ae
+    ); */
+    /* text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #ffffff
+        0 0 42px #1b53ae, 
+        0 0 82px #1b53ae,
+        0 0 92px #1b53ae,
+        0 0 102px #1b53ae,
+        0 0 151px #1b53ae
+        ; */
     font-size: larger;
     font-family: "Emilys Candy", serif;
     font-weight: 400;
@@ -40,15 +51,26 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
     color: #fff;
-    text-shadow:
-        0 0 7px #fff, /* Inner glow, tight to text */
+    filter: drop-shadow(
+        0 0 7px #fff, 
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px #ae1b78, /* Outer glow, vibrant neon color */
+        0 0 42px #ae1b78, 
         0 0 82px #ae1b78,
         0 0 92px #ae1b78,
         0 0 102px #ae1b78,
-        0 0 151px #ae1b78;
+        0 0 151px #ae1b78
+    );
+    /* text-shadow:
+        0 0 7px #fff, 
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #ae1b78, 
+        0 0 82px #ae1b78,
+        0 0 92px #ae1b78,
+        0 0 102px #ae1b78,
+        0 0 151px #ae1b78
+        ; */
     font-family: "Emilys Candy", serif;
     font-weight: 400;
     font-style: normal;
@@ -130,15 +152,25 @@ select:hover{
     text-align: center;
     border: 2px solid #dc30ab;
     color: #fff;
-    text-shadow:
-        0 0 7px #fff, /* Inner glow, tight to text */
+    filter: drop-shadow(
+        0 0 7px #fff, 
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px #ae1b78, /* Outer glow, vibrant neon color */
+        0 0 42px #ae1b78, 
         0 0 82px #ae1b78,
         0 0 92px #ae1b78,
         0 0 102px #ae1b78,
-        0 0 151px #ae1b78;
+        0 0 151px #ae1b78
+    );
+    /* text-shadow:
+         0 0 7px #fff,  
+        0 0 10px #fff,
+        0 0 21px #fff, 
+        0 0 42px #ae1b78, 
+        0 0 82px #ae1b78,
+        0 0 92px #ae1b78,
+        0 0 102px #ae1b78, 
+        0 0 151px #ae1b78; */
     background-color: transparent;
     mix-blend-mode: multiply;
     font-family: "Emilys Candy", serif;
