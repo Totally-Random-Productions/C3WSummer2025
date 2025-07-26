@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill in the Blank</title>
+</head>
+<h1> Create a Murder Mystery</h1>
+
+<body>
+    <script src="story.js"></script>
+    <div id="story">
+        <div id="mc" class="hidden">
+            <label for="">What's your player's name?</label>
+            <input type="name" id="name">
+
+            <p>What gender are they're gender</p>
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" id="gender">
+            <br>
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" id="gender">
+            <br>
+            <label for="gender">It</label>
+            <input type="radio" name="gender" id="gender">
+            <br>
+            
+            <p>What color hair to they have?</p>
+            <label for="Hair">black hair</label>
+            <input type="radio" name="hair" id="hair">
+            <br>
+            <label for="Hair">blonde hair</label>
+            <input type="radio" name="hair" id="hair">
+            <br>
+            <label for="Hair">red hair</label>
+            <input type="radio" name="hair" id="hair">
+            <br>
+            <label for="Hair">brown hair</label>
+            <input type="radio" name="hair" id="hair">
+
+            <p>What outfit color are they wearing</p>
+            <label for="outfit">black</label>
+            <input type="radio" name="outfit" id="outfit">
+            <br>
+            <label for="outfit">navy blue</label>
+            <input type="radio" name="outfit" id="outfit">
+            <br>
+            <label for="outfit">red</label>
+            <input type="radio" name="outfit" id="outfit">
+            <br>
+            <label for="outfit">brown</label>
+            <input type="radio" name="outfit" id="outfit">
+
+            <p>What item do you have?</p>
+            <label for="item">book</label>
+            <input type="radio" name="item" id="item">
+            <br>
+            <label for="item">pocket watch</label>
+            <input type="radio" name="item" id="item">
+            <br>
+            <label for="item">pearl earings</label>
+            <input type="radio" name="item" id="item">
+            <br>
+            <label for="item">ruby braclet</label>
+            <input type="radio" name="item" id="item">
+
+            <button class="submit" value="submit" onclick="next1()">Next</button>
+        </div>
+
+        <div id="p1div" class="p hidden">
+            <p id="p1"></p>
+            <button onclick="goBack(1)">Back</button>
+            <button class="submit" value="submit" onclick="replaceText()">Next</button>
+
+        </div>
+
+        <div id="ch" class="hidden">
+            <div class="c1">
+                <p>Who are the people in the room?</p>
+                <label for="c1">First person's name</label>
+                <input type="text" id="c1name">
+                <br>
+                <label for="c1">gender</label>
+                <select name="" id="c1g">
+                    <option value=""></option>
+                    <option value="c1g">Male</option>
+                    <option value="c1g">Female</option>
+                    <option value="c1g">It</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="c2">
+                <label for="c2">Second person's name</label>
+                <input type="text" id="c2name">
+                <br>
+                <label for="c2">gender</label>
+                <select name="" id="c2g">
+                    <option value=""></option>
+                    <option value="c2g">Male</option>
+                    <option value="c2g">Female</option>
+                    <option value="c2g">It</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="c3">
+                <label for="c3">Thrid person's name</label>
+                <input type="text" id="c3name">
+                <br>
+                <label for="c3">gender</label>
+                <select name="" id="c3g">
+                    <option value=""></option>
+                    <option value="c3g">Male</option>
+                    <option value="c3g">Female</option>
+                    <option value="c3g">It</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="c4">
+                <label for="c4">Fourth person's name</label>
+                <input type="text" id="c4name">
+                <br>
+                <label for="c4">gender</label>
+                <select name="" id="c4g">
+                    <option value=""></option>
+                    <option value="c4g">Male</option>
+                    <option value="c4g">Female</option>
+                    <option value="c4g">It</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="c5">
+                <label for="c5">Fifth person's name</label>
+                <input type="text" id="c5name">
+                <br>
+                <label for="c5">gender</label>
+                <select name="" id="c5g">
+                    <option value=""></option>
+                    <option value="c5g">Male</option>
+                    <option value="c5g">Female</option>
+                    <option value="c5g">It</option>
+                </select>
+            </div>
+            <button onclick="goBack(2)">Back</button>
+            <button id="next" onclick="showNext(4)">Next</button>
+        </div>
+
+        <div id="p2" class="p hidden">
+            <p>c1name.value (The Duchess) has red hair, wearing a black and crown encrusted with diamonds, c2name.value
+                (The Mobster) also the host,has black hair,wearing navy blue and has a sliver pocket pocket watch,
+                c3name.value (The Hustler) has blonde hair, wearing red and has a pearl neckles, c4name.value (The
+                Professor) has brown hair,wearing brown and has a book, c5name.value (The Fixer) has brown hair, wearing
+                black and has a ruby neckles and you (The Savant) has hair.value,wearing outfit.value and has
+                item.value. After greeting everyone the rules where annocenced.
+                There will be 4 rounds. Everyround you choose a room to go in and after everyone has chosen a room the
+                lights will be turned off. The murder will then kills someone and leave behind 1 piece evidence and 1.
+                After the evidence has been collected you will decide who to vote out and their role will be revealed.
+                fake evidence. The first round begins.</p>
+            <button onclick="goBack(4)">Back</button>
+            <button id="next" onclick="showNext(6)">Next</button>
+
+        </div>
+
+        <div id="l1" class="hidden">
+            <label for="l1">Where do you?</label>
+            <select name="" id="l1">
+                <option value=""></option>
+                <option value="l1">Stay in Hall</option>
+                <option value="l1">Go to Ballroom</option>
+                <option value="l1">Go to Kitchen</option>
+                <option value="l1">Go to Dining Room</option>
+                <option value="l1">Go to Bathroom</option>
+                <option value="l1">Go to Conservatory</option>
+                <option value="l1">Go to Billiard Room</option>
+                <option value="l1">Go to Library</option>
+                <option value="l1">Go to Study</option>
+            </select>
+            <button onclick="goBack(5)">Back</button>
+            <button id="next" onclick="showNext(7)">Next</button>
+        </div>
+
+        <div id="p3" class="p hidden">
+            <p>You chose to go in l1.value. c1name.value chose to go in study. c2name.value chose to got in the kitcken.
+                c3name.value chose to stay in the hall. c4name.value chose to go in the ballroom. c5name.value chose to
+                go in lounge. After regrouping it was revealed c4name.value was killed c4g.value was found in the
+                ballroom. There were pearls on the ground and brown hair left near the body. Voting then begins</p>
+            <button onclick="goBack(6)">Back</button>
+            <button input="" id="next" onclick="showNext(8)">Next</button>
+        </div>
+
+        <div id="vote1" class="hidden">
+            <label for="vote1">Who do you votae out?</label>
+            <select name="" id="vote1">
+                <option value=""></option>
+                <option value="vote1">skip</option>
+                <option value="vote1">c1name.value</option>
+                <option value="vote1">c2name.value</option>
+                <option value="vote1">c3name.value</option>
+                <option value="vote1">c4name.value</option>
+                <option value="vote1">c5name.value</option>
+            </select>
+            <button onclick="goBack(7)">Back</button>
+            <button id="next" onclick="showNext(9)">Next</button>
+        </div>
+
+        <div id="p4" class="p hidden">
+            <p></p>
+            <button onclick="goBack(8)">Back</button>
+            <button id="next" onclick="showNext(10)">Next</button>
+        </div>
+
+        <div id="l2" class="hidden">
+            <label for="l2">Where do you?</label>
+            <select name="" id="l2">
+                <option value=""></option>
+                <option value="l2">Stay in Hall</option>
+                <option value="l2">Go to Ballroom</option>
+                <option value="l2">Go to Kitchen</option>
+                <option value="l2">Go to Dining Room</option>
+                <option value="l2">Go to Bathroom</option>
+                <option value="l2">Go to Conservatory</option>
+                <option value="l2">Go to Billiard Room</option>
+                <option value="l2">Go to Library</option>
+                <option value="l2">Go to Study</option>
+            </select>
+            <button onclick="goBack(9)">Back</button>
+            <button id="next" onclick="showNext(11)">Next</button>
+        </div>
+
+        <div id="p5" class="p hidden">
+            <p></p>
+            <button onclick="goBack(10)">Back</button>
+            <button id="next" onclick="showNext(12)">Next</button>
+        </div>
+
+        <div id="vote2" class="hidden">
+            <label for="vote2">Who do you votae out?</label>
+            <select name="" id="vote2">
+                <option value=""></option>
+                <option value="vote2">skip</option>
+                <option value="vote2">c1name.value</option>
+                <option value="vote2">c2name.value</option>
+                <option value="vote2">c3name.value</option>
+                <option value="vote2">c4name.value</option>
+                <option value="vote2">c5name.value</option>
+            </select>
+            <button onclick="goBack(11)">Back</button>
+            <button id="next" onclick="showNext(13)">Next</button>
+        </div>
+
+        <div id="p6" class="p hidden">
+            <p></p>
+            <button onclick="goBack(12)">Back</button>
+            <button id="next" onclick="showNext(14)">Next</button>
+        </div>
+
+        <div id="13" class="hidden">
+            <label for="l3">Where do you?</label>
+            <select name="" id="l3">
+                <option value=""></option>
+                <option value="l3">Stay in Hall</option>
+                <option value="l3">Go to Ballroom</option>
+                <option value="l3">Go to Kitchen</option>
+                <option value="l3">Go to Dining Room</option>
+                <option value="l3">Go to Bathroom</option>
+                <option value="l3">Go to Conservatory</option>
+                <option value="l3">Go to Billiard Room</option>
+                <option value="l3">Go to Library</option>
+                <option value="l3">Go to Study</option>
+            </select>
+            <button onclick="goBack(13)">Back</button>
+            <button id="next" onclick="showNext(15)">Next</button>
+        </div>
+
+        <div id="p7" class="p hidden">
+            <p></p>
+            <button onclick="goBack(14)">Back</button>
+            <button id="next" onclick="showNext(16)">Next</button>
+        </div>
+
+        <div id="vote3" class="hidden">
+            <label for="vote3">Who do you votae out?</label>
+            <select name="" id="vote3">
+                <option value=""></option>
+                <option value="vote3">skip</option>
+                <option value="vote3">c1name.value</option>
+                <option value="vote3">c2name.value</option>
+                <option value="vote3">c3name.value</option>
+                <option value="vote3">c4name.value</option>
+                <option value="vote3">c5name.value</option>
+            </select>
+            <button onclick="goBack(15)">Back</button>
+            <button id="next" onclick="showNext(17)">Next</button>
+        </div>
+
+        <div id="p7" class="p hidden">
+            <p></p>
+            <button onclick="goBack(16)">Back</button>
+            <button id="next" onclick="showNext(18)">Next</button>
+        </div>
+
+        <div id="l4" class="hidden">
+            <label for="l4">Where do you?</label>
+            <select name="" id="l4">
+                <option value=""></option>
+                <option value="l4">Stay in Hall</option>
+                <option value="l4">Go to Ballroom</option>
+                <option value="l4">Go to Kitchen</option>
+                <option value="l4">Go to Dining Room</option>
+                <option value="l4">Go to Bathroom</option>
+                <option value="l4">Go to Conservatory</option>
+                <option value="l4">Go to Billiard Room</option>
+                <option value="l4">Go to Library</option>
+                <option value="l4">Go to Study</option>
+            </select>
+            <button onclick="goBack(17)">Back</button>
+            <button id="next" onclick="showNext(19)">Next</button>
+        </div>
+
+        <div id="p8" class="p hidden">
+            <p></p>
+            <button onclick="goBack(18)">Back</button>
+            <button id="next" onclick="showNext(20)">Next</button>
+        </div>
+
+        <div id="vote4" class="hidden">
+            <label for="vote4">Who do you votae out?</label>
+            <select name="" id="vote4">
+                <option value=""></option>
+                <option value="vote4">skip</option>
+                <option value="vote4">c1name.value</option>
+                <option value="vote4">c2name.value</option>
+                <option value="vote4">c3name.value</option>
+                <option value="vote4">c4name.value</option>
+                <option value="vote4">c5name.value</option>
+            </select>
+            <button onclick="goBack(19)">Back</button>
+            <button id="next" onclick="showNext(21)">Next</button>
+        </div>
+
+        <div id="p9" class="p hidden">
+            <p></p>
+            <button onclick="goBack(1)">Start Over</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
