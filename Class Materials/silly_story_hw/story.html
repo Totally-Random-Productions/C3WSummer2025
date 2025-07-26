@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Silly animal Tale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="paper">
+        <div id="top">
+                <img src="images/banana.png" alt="a banana">
+          
+            <div class="title">
+                <div class="heading">
+                    Tell a Silly Animal Tale
+                </div>
+                <div class="subheading">
+                    Fill in the blanks with the type of word described.
+                </div>
+            </div>
+    
+                <img src="images/banana.png" alt="">
+          
+        </div>
+    <div class="story">
+<p>
+            There once was a 
+            
+            <input class="line" type="text" id="describing_word" placeholder="describing word"> 
+            
+            <input class="line" type="text" id="animal" placeholder="animal"> 
+            
+            from 
+            
+            <input class="line" type="text" id="country" placeholder="country">
+            
+            . Nobody knew he was a 
+            
+            <input class="line" type="text" placeholder="same animal" id="same_animal"> 
+            
+            because he had 
+            
+            <input class="line" type="text" id="color" placeholder="color">
+             fur and ate 
+             
+             <input class="line" type="text" id="number" placeholder="number"> 
+             
+             <input class="line" type="text" id="plural_food" placeholder="plural food"> 
+             
+             each day. He liked to 
+             
+             <input class="line" type="text" id="action_word" placeholder="action word"> 
+             
+             and sing 
+             
+             <input class="line" type="text" id="song" placeholder="song">
+             . Whenever he was 
+             
+             <input class="line" type="text" id="feeling" placeholder="feeling">
+             
+             , he would start speaking 
+             
+             <input class="line" type="text" id="language"placeholder="language">
+             . Then he would feel 
+             
+             <input class="line" type="text" id="feeling_again" placeholder="feeling">
+             !
+        </p>
+           <button onclick="reset()">Reset</button>
+    </div>
+
+ 
+       
+        
+    </div>
+    <script>
+        function reset(){
+            document.getElementById("describing_word").value="";
+            document.getElementById("animal").value="";
+            document.getElementById("country").value="";
+            document.getElementById("same_animal").value="";
+            document.getElementById("color").value="";
+            document.getElementById("number").value="";
+            document.getElementById("plural_food").value="";
+            document.getElementById("action_word").value="";
+            document.getElementById("song").value="";
+            document.getElementById("feeling").value="";
+            document.getElementById("language").value="";
+            document.getElementById("feeling_again").value="";
+        }       
+    </script>
+    
+</body>
+</html>
