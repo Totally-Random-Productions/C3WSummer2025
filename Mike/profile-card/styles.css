@@ -87,17 +87,20 @@ img {
     list-style: none;
     display: flex;
     gap: 15px;
-    margin: 0.5rem 0.5rem;
+    margin: 1rem 0.5rem;
 }
 
 .socials ul li a {
     text-decoration: none;
     color: rgb(247, 245, 245);
-    font-size: 1.7rem;
+    font-size: 2.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: scale(0.9);
+    display: inline-block;
 }
 
 .socials ul li a:hover {
-    color: rgb(9, 179, 231);
+    color: rgb(127, 219, 247);
     transition: color 0.3s ease;
     transform: scale(1);
 }
@@ -115,7 +118,7 @@ img {
 
 .card__btn {
     background-color: rgb(247, 245, 245);
-    color: rgb(65, 45, 238);
+    color: rgb(29, 16, 146);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -127,7 +130,7 @@ img {
 }
 
 .card__btn:hover {
-    background-color: rgb(9, 179, 231);
+    background-color: rgb(127, 219, 247);
     color: rgb(247, 245, 245);
     transition: background-color 0.3s ease;
 }
