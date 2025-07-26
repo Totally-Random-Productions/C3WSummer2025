@@ -1,0 +1,221 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+  position: relative;
+  background: url('your-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  gap: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* 0.5 = 50% dark overlay */
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+
+body {
+    background: url(/Mike/user-info-form/harsh-kumar-q-j0Jl3FKqY-unsplash.jpg) center center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+.form__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: rgb(231, 236, 241)
+}
+
+.user__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    opacity: 0.5;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.user__form > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(44, 42, 42);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"] {
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    background-color: rgb(246, 249, 252);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"]:focus {
+    border-color: rgb(0, 123, 255);
+    outline: none;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: rgb(32, 123, 219);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(14, 97, 187);
+}
+
+.out__put {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 20px;
+    opacity: 0.5;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Confirmation Page Styles */
+.confirmation__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.confirmation__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(250, 243, 243);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    opacity: 0.5;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.confirmation__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgb(32, 32, 32);
+    text-align: center; 
+}
+
+.reset__btn {
+    padding: 10px 15px;
+    background-color: rgb(0, 132, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.reset__btn:hover {
+    background-color: rgb(0, 102, 204);
+}
+
+.confirmation__message {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.error {
+  border: 2px solid rgb(255, 0, 0);
+  background-color: rgb(255, 230, 230);
+}
+.valid {
+  border: 2px solid rgb(0, 255, 34);
+  background-color: rgb(169, 236, 172);
+}
+
+
+
