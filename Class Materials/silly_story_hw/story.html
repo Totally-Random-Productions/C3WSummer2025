@@ -23,7 +23,7 @@
                 <img src="images/banana.png" alt="">
           
         </div>
-    <div class="story">
+    <div class="story" id="story">
 <p>
             There once was a 
             
@@ -67,7 +67,9 @@
              <input class="line" type="text" id="feeling_again" placeholder="feeling">
              !
         </p>
-           <button onclick="reset()">Reset</button>
+           <button onclick="reset_loop()">Reset</button>
+           <button onclick="change_background()"> Change Background</button>
+           <button onclick="add_mike()"> Add Mike</button>
     </div>
 
  
@@ -75,6 +77,52 @@
         
     </div>
     <script>
+
+        const mike ={
+            gender:"male",
+            height:"6 ft",
+            lives_in:"Barbados"
+        }
+
+        function add_mike(){
+            document.getElementById('describing_word').value= mike.gender;
+            document.getElementById('plural_food').value= mike.height;
+
+        }
+
+
+
+
+        function reset_loop(){
+
+             var ids = ["describing_word", "animal", "country", "same_animal", "color", "number", "plural_food", "action_word", "song","feeling","language", "feeling_again"];
+
+            /* for (let i=0; i< ids.length; i++){
+
+                      document.getElementById(ids[i]).value="";
+             }*/
+            for (let i=0; i< ids.length; i++){
+
+                if( i%2== 0){
+                    document.getElementById(ids[i]).value="Even";
+                }
+                else{
+                    document.getElementById(ids[i]).value=i;
+                }     
+            }
+        }
+
+        function change_background(){
+
+            var color = document.getElementById('color').value;
+
+            const story_div = document.getElementById('story');
+
+            var colorValue = "background-color: " + color;
+
+            story_div.setAttribute('style', colorValue);
+        }
+
         function reset(){
             document.getElementById("describing_word").value="";
             document.getElementById("animal").value="";
