@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silly Animal Tale</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Tell a Silly Animal Tale</h1>
+
+  <div class="story" id="storyDisplay">
+    <p>There once was a <span id="descWord">_____</span> <span id="animal">_____</span> from <span id="country">_____</span>. Nobody knew he was a <span id="animal2">_____</span> because he had <span id="color">_____</span> fur and ate <span id="number">_____</span> <span id="food">_____</span> each day. He liked to <span id="action">_____</span> and sing <span id="song">_____</span>. Whenever he was <span id="feeling1">_____</span>, he would start speaking <span id="language">_____</span>. Then he would feel <span id="feeling2">_____</span>!</p>
+  </div>
+
+  <form id="wordForm">
+    <div class="form-group">
+        <label>Describing Word:</label>
+        <input type="text" id="inputDesc">
+    </div>
+    <div class="form-group">
+        <label>Animal:</label>
+        <input type="text" id="inputAnimal">
+    </div>
+    <div class="form-group">
+        <label>Country:</label>
+        <input type="text" id="inputCountry">
+    </div>
+    <div class="form-group">
+        <label>Same Animal Again:</label>
+        <input type="text" id="inputAnimal2">
+    </div>
+    <div class="form-group">
+        <label>Fur Color:</label>
+        <input type="text" id="inputColor">
+    </div>
+    <div class="form-group">
+        <label>Number:</label>
+        <input type="text" id="inputNumber">
+    </div>
+    <div class="form-group">
+        <label>Plural Food:</label>
+        <input type="text" id="inputFood">
+    </div>
+    <div class="form-group">
+        <label>Action Word:</label>
+        <input type="text" id="inputAction">
+    </div>
+    <div class="form-group">
+        <label>Song:</label>
+        <input type="text" id="inputSong">
+    </div>
+    <div class="form-group">
+        <label>Feeling #1:</label>
+        <input type="text" id="inputFeeling1">
+    </div>
+    <div class="form-group">
+        <label>Language:</label>
+        <input type="text" id="inputLanguage">
+    </div>
+    <div class="form-group">
+        <label>Feeling #2:</label>
+        <input type="text" id="inputFeeling2">
+    </div>
+
+    <button type="button" onclick="fillStory()">Fill Story</button>
+    <button type="button" onclick="resetStory()">Reset</button>
+  </form>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

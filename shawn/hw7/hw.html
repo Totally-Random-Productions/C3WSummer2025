@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Own Adventure!</title>
+    <style>
+         body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    .story-container {
+      border: 2px solid #4CAF50;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+    .input-container {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      padding: 8px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .btn {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    #updateBtn {
+      background-color: #4CAF50;
+      color: white;
+    }
+    #resetBtn {
+      background-color: #f44336;
+      color: white;
+    }
+    .conditional-section {
+      margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+<h1> Create Your Own Adventure!</h1>
+
+  <div class="input-container">
+    <label for="name">Enter a name:</label>
+    <input type="text" id="name" />
+  </div>
+
+   <div class="input-container">
+    <label for="animal">Favorite animal:</label>
+    <input type="text" id="animal" />
+  </div>
+
+  <div class="conditional-section">
+    <label>Choose a weather condition:</label>
+    <label><input type="radio" name="weather" value="sunny" checked> Sunny</label>
+    <label><input type="radio" name="weather" value="rainy"> Rainy</label>
+    <label><input type="radio" name="weather" value="stormy"> Stormy</label>
+  </div>
+
+    <div class="conditional-section">
+    <label>Pick a magical gift:</label>
+    <label><input type="checkbox" id="flight"> Can Fly</label>
+    <label><input type="checkbox" id="invisible"> Invisible</label>
+  </div>
+
+    <button class="btn" id="updateBtn">Tell My Story</button>
+  <button class="btn" id="resetBtn">Reset</button>
+
+   <div class="story-container" id="story">
+    <p>Once upon a time, there was someone named <strong><span id="storyName"></span></strong> who lived in <strong><span id="storyPlace"></span></strong>. One day, they met a magical <strong><span id="storyAnimal"></span></strong>.</p>
+    <p>The weather was <strong><span id="storyWeather"></span></strong>, but that didn't stop the adventure.</p>
+    <p>With powers like <strong><span id="storyPowers"></span></strong>, nothing could stand in their way!</p>
+  </div>  
+
+<script>
+      const nameInput = document.getElementById("name");
+    const placeInput = document.getElementById("place");
+    const animalInput = document.getElementById("animal");
+    const updateBtn = document.getElementById("updateBtn");
+    const resetBtn = document.getElementById("resetBtn");
+
+    updateBtn.addEventListener("click", () => {
+      document.getElementById("storyName").textContent = nameInput.value || "";
+      document.getElementById("storyPlace").textContent = placeInput.value || "";
+      document.getElementById("storyAnimal").textContent = animalInput.value || "";
+
+      // Weather radio
+      const weather = document.querySelector('input[name="weather"]:checked');
+      document.getElementById("storyWeather").textContent = weather ? weather.value : "";
+
+      // Powers checkbox
+      let powers = [];
+      if (document.getElementById("flight").checked) powers.push("Flying");
+      if (document.getElementById("invisible").checked) powers.push("Invisibility");
+      document.getElementById("storyPowers").textContent = powers.length > 0 ? powers.join(" and ") : "no powers";
+    });
+
+    resetBtn.addEventListener("click", () => {
+      nameInput.value = "";
+      placeInput.value = "";
+      animalInput.value = "";
+      document.getElementById("flight").checked = false;
+      document.getElementById("invisible").checked = false;
+      document.querySelector('input[name="weather"][value="sunny"]').checked = true;
+
+      document.getElementById("storyName").textContent = "";
+      document.getElementById("storyPlace").textContent = "";
+      document.getElementById("storyAnimal").textContent = "";
+      document.getElementById("storyWeather").textContent = "";
+      document.getElementById("storyPowers").textContent = "";
+    });
+</script>
+</body>
+</html>
