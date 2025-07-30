@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Your Own Adventure!</title>
-    <style>
-         body {
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Your Own Adventure Story</title>
+  <style>
+    body {
       font-family: Arial, sans-serif;
       background-color: #f0f8ff;
       padding: 20px;
@@ -19,7 +19,7 @@
       border-radius: 10px;
       padding: 20px;
       background-color: #fff;
-      margin-bottom: 20px;
+      margin-top: 20px;
     }
     .input-container {
       margin-bottom: 15px;
@@ -53,80 +53,106 @@
     .conditional-section {
       margin-top: 20px;
     }
-    </style>
+  </style>
 </head>
 <body>
-<h1> Create Your Own Adventure!</h1>
+  <h1>🌟🌟</h1>
+  <h1>Create Your Own Adventure Story </h1>
+  <h1>🌟🌟</h1>
+  
 
-  <div class="input-container">
-    <label for="name">Enter a name:</label>
-    <input type="text" id="name" />
-  </div>
-
-   <div class="input-container">
-    <label for="animal">Favorite animal:</label>
-    <input type="text" id="animal" />
-  </div>
+  <div class="input-container"><label for="name">Your Name:</label><input type="text" id="name"/></div>
+  <div class="input-container"><label for="sidekick">Sidekick's Name:</label><input type="text" id="sidekick"/></div>
+  <div class="input-container"><label for="place">Magical Place:</label><input type="text" id="place"/></div>
+  <div class="input-container"><label for="animal">🐶🐱Favorite Animal🐶🐱:</label><input type="text" id="animal"/></div>
+  <div class="input-container"><label for="weapon">Weapon:</label><input type="text" id="weapon"/></div>
+  <div class="input-container"><label for="mission">Mission:</label><input type="text" id="mission"/></div>
+  <div class="input-container"><label for="enemy">Enemy Type:</label><input type="text" id="enemy"/></div>
+  <div class="input-container"><label for="king">Evil King's Name:</label><input type="text" id="king"/></div>
 
   <div class="conditional-section">
-    <label>Choose a weather condition:</label>
+    <label>Weather:</label>
     <label><input type="radio" name="weather" value="sunny" checked> Sunny</label>
     <label><input type="radio" name="weather" value="rainy"> Rainy</label>
     <label><input type="radio" name="weather" value="stormy"> Stormy</label>
   </div>
 
-    <div class="conditional-section">
-    <label>Pick a magical gift:</label>
-    <label><input type="checkbox" id="flight"> Can Fly</label>
-    <label><input type="checkbox" id="invisible"> Invisible</label>
+  <div class="conditional-section">
+    <label>Your Powers:</label>
+    <label><input type="checkbox" class="user-power" value="Flight"> Can Fly</label>
+    <label><input type="checkbox" class="user-power" value="Invisibility"> Invisibility</label>
+    <label><input type="checkbox" class="user-power" value="Healing"> Healing Touch</label>
   </div>
 
-    <button class="btn" id="updateBtn">Tell My Story</button>
-  <button class="btn" id="resetBtn">Reset</button>
+  <div class="conditional-section">
+    <label>King's Powers:</label>
+    <label><input type="checkbox" class="king-power" value="Flight"> Can Fly</label>
+    <label><input type="checkbox" class="king-power" value="Invisibility"> Invisibility</label>
+    <label><input type="checkbox" class="king-power" value="Kill with a Click"> Kill with a Click</label>
+  </div>
 
-   <div class="story-container" id="story">
-    <p>Once upon a time, there was someone named <strong><span id="storyName"></span></strong> who lived in <strong><span id="storyPlace"></span></strong>. One day, they met a magical <strong><span id="storyAnimal"></span></strong>.</p>
-    <p>The weather was <strong><span id="storyWeather"></span></strong>, but that didn't stop the adventure.</p>
-    <p>With powers like <strong><span id="storyPowers"></span></strong>, nothing could stand in their way!</p>
-  </div>  
+  <button class="btn" id="updateBtn">📝 Tell My Story</button>
+  <button class="btn" id="resetBtn">🔄 Reset</button>
 
-<script>
-      const nameInput = document.getElementById("name");
-    const placeInput = document.getElementById("place");
-    const animalInput = document.getElementById("animal");
+  <div class="story-container" id="story">
+    <p><strong><span id="storyName"></span></strong> and their loyal sidekick <strong><span id="storySidekick"></span></strong> began their journey in the magical land of <strong><span id="storyPlace"></span></strong>, where mythical <strong><span id="storyAnimal"></span></strong>s roamed free.</p>
+    <p>The weather was <strong><span id="storyWeather"></span></strong>, a perfect setting to begin an epic quest using their trusty <strong><span id="storyWeapon"></span></strong>.</p>
+    <p>Their mission: <strong><span id="storyMission"></span></strong>, would test every ounce of courage as they battled <strong><span id="storyEnemy"></span></strong>s across the land.</p>
+    <p>Luckily, they possessed powers like <strong><span id="storyPowers"></span></strong> that made them a force to be reckoned with.</p>
+    <p>But none were more feared than the evil <strong><span id="storyKing"></span></strong>, who wielded powers of <strong><span id="kingPower"></span></strong> and ruled with terror.</p>
+  </div>
+
+  <script>
     const updateBtn = document.getElementById("updateBtn");
     const resetBtn = document.getElementById("resetBtn");
 
+    const inputFields = ["name", "sidekick", "place", "animal", "weapon", "mission", "enemy", "king"];
+    const spanFields = ["storyName", "storySidekick", "storyPlace", "storyAnimal", "storyWeapon", "storyMission", "storyEnemy", "storyKing"];
+
     updateBtn.addEventListener("click", () => {
-      document.getElementById("storyName").textContent = nameInput.value || "";
-      document.getElementById("storyPlace").textContent = placeInput.value || "";
-      document.getElementById("storyAnimal").textContent = animalInput.value || "";
+      // Update text spans from inputs
+      inputFields.forEach(id => {
+        const value = document.getElementById(id).value;
+        const spanId = "story" + id.charAt(0).toUpperCase() + id.slice(1);
+        document.getElementById(spanId).textContent = value || "Unknown";
+      });
 
-      // Weather radio
-      const weather = document.querySelector('input[name="weather"]:checked');
-      document.getElementById("storyWeather").textContent = weather ? weather.value : "";
+      // Weather
+      const weather = document.querySelector('input[name="weather"]:checked').value;
+      document.getElementById("storyWeather").textContent = weather;
 
-      // Powers checkbox
-      let powers = [];
-      if (document.getElementById("flight").checked) powers.push("Flying");
-      if (document.getElementById("invisible").checked) powers.push("Invisibility");
-      document.getElementById("storyPowers").textContent = powers.length > 0 ? powers.join(" and ") : "no powers";
+      // User Powers
+      const userPowerElems = document.querySelectorAll(".user-power");
+      const userPowers = [];
+      userPowerElems.forEach(checkbox => {
+        if (checkbox.checked) userPowers.push(checkbox.value);
+      });
+      document.getElementById("storyPowers").textContent = userPowers.length > 0 ? userPowers.join(", ") : "no powers";
+
+      // King Powers
+      const kingPowerElems = document.querySelectorAll(".king-power");
+      const kingPowers = [];
+      kingPowerElems.forEach(checkbox => {
+        if (checkbox.checked) kingPowers.push(checkbox.value);
+      });
+      document.getElementById("kingPower").textContent = kingPowers.length > 0 ? kingPowers.join(", ") : "unknown powers";
     });
 
     resetBtn.addEventListener("click", () => {
-      nameInput.value = "";
-      placeInput.value = "";
-      animalInput.value = "";
-      document.getElementById("flight").checked = false;
-      document.getElementById("invisible").checked = false;
+      // Reset text inputs
+      inputFields.forEach(id => document.getElementById(id).value = "");
+
+      // Reset checkboxes
+      const allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+      allCheckboxes.forEach(cb => cb.checked = false);
+
+      // Reset weather
       document.querySelector('input[name="weather"][value="sunny"]').checked = true;
 
-      document.getElementById("storyName").textContent = "";
-      document.getElementById("storyPlace").textContent = "";
-      document.getElementById("storyAnimal").textContent = "";
-      document.getElementById("storyWeather").textContent = "";
-      document.getElementById("storyPowers").textContent = "";
+      // Clear spans
+      const allSpans = document.querySelectorAll(".story-container span");
+      allSpans.forEach(span => span.textContent = "");
     });
-</script>
+  </script>
 </body>
 </html>
