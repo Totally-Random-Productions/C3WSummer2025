@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Silly animal Tale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="paper">
+        <div id="top">
+                <img src="images/banana.png" alt="a banana">
+          
+            <div class="title">
+                <div class="heading">
+                    Tell a Silly Animal Tale
+                </div>
+                <div class="subheading">
+                    Fill in the blanks with the type of word described.
+                </div>
+            </div>
+    
+                <img src="images/banana.png" alt="">
+          
+        </div>
+    <div class="story" id="story">
+<p>
+            There once was a 
+            
+            <input class="line" type="text" id="describing_word" placeholder="describing word"> 
+            
+            <input class="line" type="text" id="animal" placeholder="animal"> 
+            
+            from 
+            
+            <input class="line" type="text" id="country" placeholder="country">
+            
+            . Nobody knew he was a 
+            
+            <input class="line" type="text" placeholder="same animal" id="same_animal"> 
+            
+            because he had 
+            
+            <input class="line" type="text" id="color" placeholder="color">
+             fur and ate 
+             
+             <input class="line" type="text" id="number" placeholder="number"> 
+             
+             <input class="line" type="text" id="plural_food" placeholder="plural food"> 
+             
+             each day. He liked to 
+             
+             <input class="line" type="text" id="action_word" placeholder="action word"> 
+             
+             and sing 
+             
+             <input class="line" type="text" id="song" placeholder="song">
+             . Whenever he was 
+             
+             <input class="line" type="text" id="feeling" placeholder="feeling">
+             
+             , he would start speaking 
+             
+             <input class="line" type="text" id="language"placeholder="language">
+             . Then he would feel 
+             
+             <input class="line" type="text" id="feeling_again" placeholder="feeling">
+             !
+        </p>
+           <button onclick="reset_loop()">Reset</button>
+           <button onclick="change_background()"> Change Background</button>
+           <button onclick="add_mike()"> Add Mike</button>
+    </div>
+
+ 
+       
+        
+    </div>
+    <script>
+
+        const mike ={
+            gender:"male",
+            height:"6 ft",
+            lives_in:"Barbados"
+        }
+
+        function add_mike(){
+            document.getElementById('describing_word').value= mike.gender;
+            document.getElementById('plural_food').value= mike.height;
+
+        }
+
+
+
+
+        function reset_loop(){
+
+             var ids = ["describing_word", "animal", "country", "same_animal", "color", "number", "plural_food", "action_word", "song","feeling","language", "feeling_again"];
+
+            /* for (let i=0; i< ids.length; i++){
+
+                      document.getElementById(ids[i]).value="";
+             }*/
+            for (let i=0; i< ids.length; i++){
+
+                if( i%2== 0){
+                    document.getElementById(ids[i]).value="Even";
+                }
+                else{
+                    document.getElementById(ids[i]).value=i;
+                }     
+            }
+        }
+
+        function change_background(){
+
+            var color = document.getElementById('color').value;
+
+            const story_div = document.getElementById('story');
+
+            var colorValue = "background-color: " + color;
+
+            story_div.setAttribute('style', colorValue);
+        }
+
+        function reset(){
+            document.getElementById("describing_word").value="";
+            document.getElementById("animal").value="";
+            document.getElementById("country").value="";
+            document.getElementById("same_animal").value="";
+            document.getElementById("color").value="";
+            document.getElementById("number").value="";
+            document.getElementById("plural_food").value="";
+            document.getElementById("action_word").value="";
+            document.getElementById("song").value="";
+            document.getElementById("feeling").value="";
+            document.getElementById("language").value="";
+            document.getElementById("feeling_again").value="";
+        }       
+    </script>
+    
+</body>
+</html>
