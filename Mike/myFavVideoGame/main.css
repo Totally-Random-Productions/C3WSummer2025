@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+    max-width: 70ch;
+    margin: auto;
+    font-size: 1.25em;
+    color: #333;
+    line-height: 1.4;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: serif;
+    text-align: justify;
+    margin: 20px 20px;
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.link__text {
+    color: rgb(27, 130, 240);
+}
+
+.underline {
+    text-decoration: underline;
+    color: rgb(233, 6, 6);
+}
+
+.roman__numerals {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: rgb(233, 6, 6);
+}
+
+.feedback__form {
+    background-color: rgb(201, 196, 196);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.submit__button {
+    background-color: rgb(76, 175, 80);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

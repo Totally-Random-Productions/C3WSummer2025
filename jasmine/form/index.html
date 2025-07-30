@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=New+Rocker&display=swap" rel="stylesheet">
+    <title>Welx</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">
+        <h2>Jet 2 Holiday</h2>
+      </div>
+
+      <form id="myForm">
+        <div class="item">
+          <label for="name-input">Name: </label>
+          <input type="text" id="name-input" placeholder="Name" />
+        </div>
+
+        <div class="item">
+          <label for="email-input">Email: </label>
+          <input type="email" id="email-input" placeholder="sjddjdnn@__.com" />
+        </div>
+
+        <div class="item">
+          <label for="age-input">Age: </label>
+          <input type="number" id="age-input" placeholder="Age" />
+        </div>
+
+        <div class="item">
+          <label for="city-input">City: </label>
+          <input type="text" id="city-input" placeholder="City" />
+        </div>
+
+        <button class="btn" id="submit" onclick="validateItems()">
+          Submit
+        </button>
+
+        <button class="btn" type="reset" onclick="freshStart()">Reset</button>
+
+      </form>
+    </div>
+
+    <div class="container" id="preview">
+      <p id="paragraph">
+        
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

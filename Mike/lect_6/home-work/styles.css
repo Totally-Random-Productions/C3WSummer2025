@@ -1,0 +1,55 @@
+body {
+    background: url(/Mike/lect_6/home-work/images/M_Junior_This_vibrant_cartoon_background_bursts_with_energy!_In_the_foregr_277878e7-b894-45fc-9601-4f4cb77a09d4.png) no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f4f4;
+    max-width: 700px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.story {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+input[type="text"] {
+    padding: 6px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.red__border {
+    border: 2px solid #be0505;
+}
