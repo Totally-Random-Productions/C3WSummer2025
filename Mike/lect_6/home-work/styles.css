@@ -49,3 +49,7 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+.red__border {
+    border: 2px solid #be0505;
+}
