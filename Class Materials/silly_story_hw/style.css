@@ -1,0 +1,74 @@
+.line{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 3px;
+    border-color:black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+input:focus{
+    background-color: rgb(226, 246, 251);
+    outline: none;
+    border-radius: 5px;
+}
+
+
+.line::placeholder{
+    text-align: center;
+    color: grey;
+    font-size: 20px;    
+}
+
+p{
+    font-family: cursive;
+    font-size: 20px;
+    text-align: left;
+}
+
+#paper{
+    height: 700px;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.heading{
+    color: lightblue;
+    font-family: cursive;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.subheading{
+    color: red;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+#top{
+display: flex;
+flex-direction: row;
+height: 20%;
+}
+
+img{
+    object-fit: contain;
+}
+
+.title{
+    width: 50%;
+}
+.story{
+    height: 80%;
+    padding: 10px;
+    background-color: red;
+}
+
