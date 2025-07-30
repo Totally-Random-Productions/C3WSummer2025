@@ -86,7 +86,7 @@ input{
     border-bottom: solid #dc30ab 3px;
     vertical-align: middle;
     font-size: 30px;
-    background-color: transparent;
+    background-color: pink;
     mix-blend-mode: multiply;
     font-family: "Emilys Candy", serif;
     
@@ -119,9 +119,14 @@ select{
     color: #1b98ae;
 } */
 
+/* input:autofill{
+    
+    background-color: #ae471b;
+} */
+
 input[type=text]:focus {
     outline: none;
-    /* color: #1b98ae; */
+    /* background-color: #1b98ae; */
 }
 
 input[type=number]:focus{
