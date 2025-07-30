@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="story.css">
+    <script src="story.js"></script>
+    <h1>Pirate Story</h1>
+    <div id="story">
+        <p>Have you ever heard of <span id="color">________</span> Beard the Pirate? His friends called him <span id="nickname">______</span>. He would <span id="verb">_______</span> the <span id="adjective">_______</span> Seas. When people saw <span id="nickname">_____</span> coming they'd scream, "<span id="verb2">______</span> or he'll put you in a <span id="item">______</span>". Everyone feared Pirate <span id="nickname">_______</span> and his pet <span id="pet">______</span>, named <span id="petName">______</span>.</p>
+    </div>
+
+    <div id="form">
+        <div class="form">
+        <label for="color">What color was his beard?</label>
+        <input type="text" id="inputColor">
+        </div>
+        <br>
+
+        <div class="form">
+            <label for="nickname">What is his nickname?</label>
+            <input type="text" id="nicknameInput">
+        </div>
+        <br>
+
+        <div class="form">
+            <label for="verb">What does he do?</label>
+            <input type="text" id="verbInput">
+        </div>
+        <br>
+
+        <div class="form">
+            <label for="adjective">What is the name of the sea?</label>
+            <input type="text" id="adjuctiveInput">
+        </div>
+        <br>
+
+        <div class="form">
+            <label for="verb2">What would he do to them?</label>
+            <input type="text" id="verb2Input">
+        </div>
+        <br>
+
+        <div class="form">
+            <label for="item">What would he put them in?</label>
+            <input type="text" id="itemInput">
+        </div>
+        
+        <div>
+            <p>What type of pet did he have?</p>
+            <select id="petInput">
+                <option value="pet"></option>
+                <option value="parrot"><label>parrot</label></option>
+                <option value="duck"><label>duck</label></option>
+                <option vaule="crocodile"><label>crocodile</label></option>
+                <option value="pinguin"><label>pinguin</label></option>
+            </select>
+        </div>
+        <br>
+
+        <div class="form">
+            <label for="petName">What was the pet's name?</label>
+            <input type="text" id="petNameInput">
+        </div>
+        <button type="button" onclick="fillIn()">Fill in</button>
+    </div>
+</body>
+</html>
