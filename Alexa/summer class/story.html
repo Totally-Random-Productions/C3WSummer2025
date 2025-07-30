@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- To do: add button that reverts page to original state after form disappears, when certain language chosen a flag of it pops up on submit.. maybe try a dropdown menu, reset button resets whole page -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         <link rel="stylesheet" href="story.css">
+         <link rel="stylesheet" href="">
+          <script defer src="story.js"></script>
+</head>
+<body>
+   
+    <h1 class="h">Mad Libs Stories</h1>
+    <hr>
+    <br>
+    
+    <div class="storyBody" id="storyBody" style="display: block;">
+       
+ <form id="formInput" action="" >
+
+<ol>
+    <li>
+       <label for="">Describing word</label> <input type="text" name="" id="adjectiveInput"> 
+    </li>
+    <br>
+    <li>
+         <label for="">Animal</label> <input type="text" name="" id="animalInput">
+    </li>
+    <br>
+    <li>
+         <label for="">Country</label> <input type="text" name="" id="countryInput">
+    </li>
+    <br>
+    <li>
+         <label for="">Colour</label> <input type="text" name="" id="colourInput">
+    </li>
+    <br>
+    <li>
+         <label for="">Number</label> <input type="number" name="" id="numberInput">
+    </li>
+    <br>
+    <li>
+         <label for="">Plural food</label> <input type="text" name="" id="foodsInput">
+    </li>
+    <br>
+    <li>
+         <label for="">Action word</label> <input type="text" name="" id="actionInput">
+    </li>
+    <br>
+    <li>
+         <label for="">Song</label> <input type="text" name="" id="songInput">
+    </li>
+    <br>
+    <li>
+         <label for="">Feeling</label> <input type="text" name="" id="firstFeelingInput">
+    </li>
+    <br>
+    <li>
+         
+          <!-- <label for="">Language</label>
+         <input type="text" name="" id="languageInput" placeholder="German, English, French ;)"> -->
+          <label for="">Language</label>
+         <select name="" id="languageInput">
+          <option value="English">English</option>
+          <option value="German">German</option>
+          <option value="Spanis">Spanish</option>
+          <option value="French">French</option>
+         </select>
+ 
+    </li>
+    <br>
+    <li>
+         <label for="">Feeling</label> <input type="text" name="" id="secondFeelingInput">
+    </li>
+</ol>
+
+ 
+        <input class="btn" type="button" value="Submit" onclick="infoReplace(); displayText(); changeBackground(); changeFlag();">  
+         
+        <input class="btn" type="button" value="Reset" onclick="resetLoop()">
+
+
+    
+    </form>
+</div>
+   
+<div id="storyComplete" style="display: none;">
+      <h2 class="h" id="storyTitle" style="display: none;">The <span id="adjectiveEmptyTitle">___</span> <span id="animalEmptyTitle">___</span> from <span id="countryEmptyTitle" >___</span></h2>
+<div id="cat"><img src="images/white cat no background.png" alt="" width="100px" ></div>
+
+   <p class="text" id="infoText" style="display: none;">
+        There once was a <span id="adjectiveEmpty">___</span> <span id="animalEmpty">___</span> from <span id="countryEmpty">___</span>. Nobody knew he was a <span id="animalEmptyTwo">___</span> because he had <span id="colourEmpty">___</span> fur and ate <span id="numberEmpty">___</span> <span id="foodsEmpty">___</span> each day. He liked to <span id="actionEmpty">___</span> and sing <span id="songEmpty">___</span>. Whenever he was feeling <span id="firstFeelingEmpty">___</span>, he would start speaking <span id="languageEmpty">___</span>. Then he would feel <span id="secondFeelingEmpty">___</span>.
+      
+    </p> 
+    <div id="passionFruit"><img src="images/passion fruit no background.png" alt="" height="100px"></div>
+
+<input  class="btn" type="button" value="Back" id="back "onclick="window.history.back">
+
+      </div>
+</div>
+ 
+
+    
+</body>
+</html>
