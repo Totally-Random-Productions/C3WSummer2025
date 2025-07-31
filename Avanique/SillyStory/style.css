@@ -1,0 +1,99 @@
+.form-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:dodgerblue;
+    width: 650px;
+    height: 735px; 
+    border: 10px navy ridge;
+    border-radius: 30px;
+}
+.form-bg2{
+    background-color: rgb(162, 242, 234);
+    width: 600px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: inset;
+    border-radius: 30px;
+    border-color: navy;
+}
+.heading{
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+}
+.user-data{
+    background-color: skyblue;
+    width: 450px;
+    height: 22px;
+    border-radius: 10px;
+    padding: 4px;
+    border: 1px navy solid;
+}
+label{
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.form-button{
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:dodgerblue;
+    color:azure;
+    border: 3px navy solid;
+}
+.number-input{
+    border-radius: 5px;
+    border-style: none;
+    height: 16px;
+}
+.story{
+    background-color: blanchedalmond;
+    border-radius: 30px;
+    padding: 10px;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    color:peru; 
+}
+span{
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: chocolate;
+    padding: 5px;
+    color: bisque;
+    margin: 3px;
+    border-radius: 30px;
+}
+
+.title{
+    height: 250px;
+    width: 250px;
+    margin-left: 30px;
+    border-radius: 100px;
+}
+.title-div{
+    display: flex;
+    align-items: baseline;
+    font-family: 'Emilys Candy';
+    font-size: 40px;
+}
+p{
+    font-size: 40px;
+    line-height: 75px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.story-info{
+    margin-top: 0px;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
