@@ -8,7 +8,14 @@
 }
 
 .result {
-    padding: 1rem;
+    padding: 0.5rem;
     color: #333;
     margin: 1rem 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #f0e1e1;
+    border-radius: 0.5rem;
 }
