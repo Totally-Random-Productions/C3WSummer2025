@@ -24,8 +24,10 @@ function(err, data) {
   } else {
     console.log(data);
 
+    // Get the data from the response
     const characters = data.items; 
 
+    // Loop through the characters and create cards
     characters.forEach(character => {
       const card = document.createElement("div");
       card.classList.add("inner__card");  
