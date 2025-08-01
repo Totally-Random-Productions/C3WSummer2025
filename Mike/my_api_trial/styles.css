@@ -8,35 +8,80 @@
 }
 
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.main__title {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 1.5rem;
 }
 
 .my__image {
     width: 100%;
-    height: auto;
-    max-width: 200px;
-    margin: 0 auto;
-    object-fit: cover;
+    height: 300px;
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
-.card__home {
+.my__image:hover {
+    transform: scale(1.05);
+}
+
+.card__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    max-width: 700px;
+    gap: 1rem;
+    width: 80%;
+    max-width: 1200px;
     background-color: #b1acac;
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin:  0 auto;
+}
+
+.inner__card {
+  width: 250px; /* Or try 200px */
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .inner__card:hover {
+    transform: scale(1.05);
+} */
+
+.card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s ease;
 }
 
 .card__info {
     background-color: #333333;
     color: #ffffff;
     padding: 1rem;
+}
+
+.card__info p {
+    margin: 0.5rem 0;
+    line-height: 1.4;
 }
