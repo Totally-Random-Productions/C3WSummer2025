@@ -1,0 +1,31 @@
+
+.player-info{
+    margin: 20px;
+    padding: 10px;
+    border: 10px solid skyblue;
+    border-radius: 10px;
+    width:300px;
+    background-color:deepskyblue;
+
+}
+.player-card-info{
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: column;*/
+    gap: 50px;
+    justify-content: center;
+}
+img{
+    width: 200px;
+    height: 300px;
+}
+@font-face {
+  font-family: 'SaiyanSans';
+  src: url('fonts/Saiyan-Sans.ttf') format('truetype');
+}
+h1{
+    font-family: 'SaiyanSans',sans-serif;
+    font-size: 48px;
+    color: #ffcc00;
+    text-shadow: 3px 3px black;
+}

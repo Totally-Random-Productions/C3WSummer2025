@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silly Story</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Emilys Candy' rel='stylesheet'>
+</head>
+<body>
+        <div class="form-bg">
+            
+        <div class="form-bg2">
+
+            <div class="heading">
+                <h1>Create Your Story</h1>
+            </div>
+
+            <div class="describing-word user-data">
+                <label for="size">
+                    Choose a Size:  
+                </label>
+                <input class="size-input" type="radio" name="describing-word" id="describing-word1" value="big">
+                <label for="describing-word1">Big</label>
+                <input class="size-input" type="radio" name="describing-word" id="describing-word2" value="small">
+                <label for="describing-word2">Small</label>
+            </div>
+            <br>
+
+            <div class="animal user-data">
+                <label for="animal">
+                    Choose an Animal: 
+                </label>
+                <input class="animal-input" type="radio" name="animal" id="animal1" value="elephant">
+                <label for="animal1">Elephant</label>
+                <input class="animal-input" type="radio" name="animal" id="animal2" value="mouse">
+                <label for="animal2">Mouse</label>
+            </div>
+            <br>
+
+            <div class="colour user-data">
+                <label for="colour">
+                    Pick a Colour: 
+                </label>
+                <input class="colour-input" type="color" name="colour" id="colour" value="">
+            </div>
+            <br>
+
+            <div class="number user-data">
+                <label for="number">
+                    Pick a Number: 
+                </label>
+                <input class="number-input" type="number" name="number" id="number" placeholder="Number between 1-10">
+            </div>
+            <br>
+
+            <div class="food user-data">
+                <label for="food">
+                    Pick a Food Item: 
+                </label>
+                <input class="food-input" type="radio" name="food" id="food" value="bananas">
+                <label for="">Bananas</label>
+                <input class="food-input" type="radio" name="food" id="food" value="cheese">
+                <label for="">Cheese</label>
+            </div>
+            <br>
+
+             <div class="action user-data">
+                <label for="action">
+                    Pick an Action: 
+                </label>
+                <input class="action-input" type="radio" name="action" id="action" value="fly">
+                <label for="">Fly</label>
+                <input class="action-input" type="radio" name="action" id="action" value="run">
+                <label for="">Run</label>
+            </div>
+            <br>
+
+            <div class="genre user-data">
+                <label for="genre">
+                    Pick a Genre: 
+                </label>
+                <input class="genre-input" type="radio" name="genre" id="genre" value="r&b">
+                <label for="">R&B</label>
+                <input class="genre-input" type="radio" name="genre" id="genre" value="metal">
+                <label for="">Metal</label>
+            </div>
+            <br>
+
+            <div class="feeling user-data">
+                <label for="feeling">
+                    Pick an Emotion: 
+                </label>
+                <input class="feeling-input" type="radio" name="feeling" id="feeling" value="sad">
+                <label for="">Sad</label>
+                <input class="feeling-input" type="radio" name="feeling" id="feeling" value="angry">
+                <label for="">Angry</label>
+            </div>
+            <br>
+
+             <div class="language user-data">
+                <label for="language">
+                    Pick a Language: 
+                </label>
+                <input class="language-input" type="radio" name="language" id="language" value="french">
+                <label for="">French</label>
+                <input class="language-input" type="radio" name="language" id="language" value="russian">
+                <label for="">Russian</label>
+            </div>
+            <br>
+
+             <div class="feeling2 user-data">
+                <label for="feeling2">
+                    You will feel
+                </label>
+                <input class="feeling2-input" type="radio" name="feeling2-input" id="feeling2-input" value="happy">
+                <label for="">Happy</label>
+                 <label for="feeling2">
+                    about your story.
+                </label>
+            </div>
+            <br>
+
+            <div class="buttons">
+                <input class="submit-button form-button" type="button" value="Create" onclick="showStory()">
+                <input class="reset-button form-button" type="button" value="Reset" onclick="clearData()">
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <div class="story" id="story">
+        <div class="title-div">
+            <h1> A Silly Tale! </h1>
+            <img class="title"  src="silly2.png" alt="">
+        </div>
+        <div>
+             <p id="story-info">
+                There once was a <span class="db-span" id="db-span" >click here</span><span class="animal-span" id="animal-span"> click here</span>. Nobody knew he was a <span class="animal-span" id="animal-span2">click here</span>, because he had <span class="colour-span" id="colour-span">click here</span>  fur and ate <span class="number-span" id="number-span">click here</span><span class="food-span" id="food-span"> click here</span> each day. He likes to <span class="action-span" id="action-span">click here</span> and sing <span class="music-span" id="music-span">click here</span>. Whenever he was <span class="feeling-span" id="feeling-span">click here</span>, he would start speaking <span class="lang-span" id="lang-span">click here</span>. Then he would feel <span class="feel2-span" id="feel2-span">click here</span>.
+             </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

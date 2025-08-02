@@ -30,7 +30,7 @@ function(err, data) {
     alert('Something went wrong: ' + err);
   } else {
     console.log(data);
-    document.getElementById("dragonball").innerHTML="Dragon ball result: " + data.items[3].name;
+    document.getElementById("dragonball").innerHTML="Dragon ball result: " + data.items[0].name;
   }
 });
 
@@ -40,7 +40,7 @@ function(err, data) {
     alert('Something went wrong: ' + err);
   } else {
     console.log(data);
-    document.getElementById("potter").innerHTML="Sample from Harry Potter result: " + data[0].title;
+    document.getElementById("potter").innerHTML="Sample from Harry Potter result: " + data[5].title;
   }
 });
 
@@ -53,5 +53,3 @@ function(err, data) {
     document.getElementById("doggo").setAttribute("src" , data.url);
   }
 });
-
-
