@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="using_fetch.js"></script>
+      <style>
+            body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .card-container {
+      position: relative;
+      width: 320px;
+      height: 400px;
+    }
+       .card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 0.4s ease;
+      text-align: center;
+    }
+
+           .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+      .card h2 {
+      margin: 10px 0;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+        .card p {
+      font-size: 14px;
+      color: #666;
+     
+    }
+    
+    .info {
+      text-align: left;
+      margin-top: 15px;}
+    
+       .info p {
+      margin: 6px 0;}
+    
+     .label {
+      font-weight: bold;}
+
+      
+    
+       button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;}
+    
+
+    .card.hidden {
+      opacity: 0;
+      pointer-events: none;}
+    
+
+    
+
+
+      </style>
+    
+</head>
+<body>
+
+    <div  class="card-container">
+        <!-- Card 1 -->
+         <div class="card" id="card1">
+            
+    <img style id="doggo" display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="">
+    
+            <h2>Hi I'm Shawn</h2>
+            <p>I'm a fun and loving kid who enjoy spending time with family</p>
+            
+            <div  class="info">
+                <p><span class="label">Favorite Color:</span>Red</p>
+                <p><span class="label">hobby:</span>Playing games</p>
+                <p><span class="label">Dream Job</span>Web Developer</p>
+             </div>
+             <button onclick="showCard(2)">Next</button>
+
+         </div>
+   
+        </div>
+
+         <!-- Card 2 -->
+      <div  class="card-container">
+
+          <div class="card hidden" id="card2">
+      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Favorite">
+      <h2>More About Me</h2>
+      <p>Here are a few more fun facts!</p>
+      <div class="info">
+        <p><span class="label">Favorite Food:</span>Churches 🍗</p>
+        <p><span class="label">Pet I want:</span> Bird(Fire Red)</p>
+        <p><span class="label">Dream Car:</span>Bmw</p>
+      </div>
+      <button onclick="showCard(1)">Back</button>
+    </div>
+  </div>
+
+
+      </div>
+  
+
+  <script>
+     function showCard(cardNumber) {
+      document.getElementById("card1").classList.add("hidden");
+      document.getElementById("card2").classList.add("hidden");
+
+      document.getElementById("card" + cardNumber).classList.remove("hidden");
+    }
+
+
+
+    function run(){
+    document.getElementById("card1").innerHTML=
+    "";
+}
+
+const doggo_url = 'https://random.dog/woof.json?ref=public_apis'; 
+
+
+
+
+
+function getData(url, callback){
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status === 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status, xhr.response);
+      }
+    };
+    xhr.send();
+};
+
+getData(doggo_url,
+function(err, data) {
+  if (err !== null) {
+    alert('Something went wrong: ' + err);
+  } else {
+    console.log(data);
+    document.getElementById("doggo").setAttribute("src" , data.url);
+  }
+});
+
+  </script>
+
+
+
+</body>
+</html>
