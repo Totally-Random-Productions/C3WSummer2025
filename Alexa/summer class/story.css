@@ -1,0 +1,52 @@
+.btn:hover {
+ background-color: greenyellow;
+}
+
+.storyBody{
+    background-color: rgb(172, 212, 207);
+    padding: 30px 50px 50px 10px;
+    border: rgb(89, 153, 137) 5px solid;
+    width: 500px;
+}
+
+#storyComplete{
+    background-color: rgb(172, 212, 207);
+    padding: 30px 50px 50px 10px;
+    border: rgb(89, 153, 137) 5px solid;
+    width: 500px;
+    
+
+}
+
+#infoText{
+    line-height: 50px;
+}
+
+#formInput{
+    width: 150px;
+    font-size: large;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+}
+#passionFruit{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+#cat{
+    display: flex;
+    justify-content: flex-start;
+}
+
+p{
+    font-size: large;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+}
+     
+
+
+.h{
+ font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+}
+
+

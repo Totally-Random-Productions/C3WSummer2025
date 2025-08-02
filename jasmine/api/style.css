@@ -1,0 +1,57 @@
+img{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+body{
+    margin: 20px 40px 20px 50px;
+    background-color: black;
+
+
+}
+
+.container{
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    height: 100%;
+    background-color: rgba(77, 98, 99, 0.546);
+    justify-content: space-around;
+    align-content: space-around;
+
+}
+
+p{
+    color: antiquewhite;
+    margin: 10px;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    color: rgb(201, 35, 35);
+    font-family: "Bodoni Moda", serif;
+    font-size: xx-large;
+}
+
+.items{
+    border: 2px solid rgb(1, 10, 14);
+    border-radius: 10px;
+    margin: 10px;
+    font-family: "Bodoni Moda", serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+button{
+    background-color: rgb(201, 35, 35);
+    margin: 10px;
+    border-radius: 10px;
+    font-family: "Bodoni Moda", serif;
+    /* font-style: italic; */
+    font-weight: bold;
+}

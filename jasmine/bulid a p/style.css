@@ -1,0 +1,196 @@
+body{
+    margin: 50px;
+    background-image: url("img pack/hearts.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: grayscale(50%);
+}
+
+.header{
+    text-align: center;
+    color: #f96fc7;
+    /* filter: drop-shadow(
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #ffffff,
+        0 0 42px #1b53ae, 
+        0 0 82px #1b53ae,
+        0 0 92px #1b53ae,
+        0 0 102px #1b53ae,
+        0 0 151px #1b53ae
+    ); */
+    /* text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #ffffff
+        0 0 42px #1b53ae, 
+        0 0 82px #1b53ae,
+        0 0 92px #1b53ae,
+        0 0 102px #1b53ae,
+        0 0 151px #1b53ae
+        ; */
+    font-size: larger;
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    /* border: 3px solid #dc30ab; */
+    height: 90vh;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+
+.para{
+    font-size: 45px;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    filter: drop-shadow(
+        0 0 7px #fff, 
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #ae1b78, 
+        0 0 82px #ae1b78,
+        0 0 92px #ae1b78,
+        0 0 102px #ae1b78,
+        0 0 151px #ae1b78
+    );
+    /* text-shadow:
+        0 0 7px #fff, 
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #ae1b78, 
+        0 0 82px #ae1b78,
+        0 0 92px #ae1b78,
+        0 0 102px #ae1b78,
+        0 0 151px #ae1b78
+        ; */
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+input{
+    /* display: inline-block; */
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #dc30ab 3px;
+    vertical-align: middle;
+    font-size: 30px;
+    background-color: pink;
+    mix-blend-mode: multiply;
+    font-family: "Emilys Candy", serif;
+    
+}
+
+::placeholder{
+    text-align: center;
+    color: #aff1fc;
+    font-family: "Emilys Candy", serif;
+}
+
+select{
+    height: 40px;
+    vertical-align: middle;
+    font-size: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #dc30ab 1px;
+    color:  #aff1fc;;
+    text-align: match-parent;
+    /* margin-bottom: 12px; */
+    background-color: transparent;
+    mix-blend-mode: multiply;
+    font-family: "Emilys Candy", serif;
+   
+}
+
+/* input[type=text]{
+    color: #1b98ae;
+} */
+
+/* input:autofill{
+    
+    background-color: #ae471b;
+} */
+
+input[type=text]:focus {
+    outline: none;
+    /* background-color: #1b98ae; */
+}
+
+input[type=number]:focus{
+    outline: none;
+}
+
+input[type=radio]:focus {
+     transform: scale(2);
+}
+
+input:hover{
+    background-color: #1b98ae;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+select:hover{
+    background-color: #1b98ae;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+    margin-left: 25px;
+    text-align: center;
+    border: 2px solid #dc30ab;
+    color: #fff;
+    filter: drop-shadow(
+        0 0 7px #fff, 
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #ae1b78, 
+        0 0 82px #ae1b78,
+        0 0 92px #ae1b78,
+        0 0 102px #ae1b78,
+        0 0 151px #ae1b78
+    );
+    /* text-shadow:
+         0 0 7px #fff,  
+        0 0 10px #fff,
+        0 0 21px #fff, 
+        0 0 42px #ae1b78, 
+        0 0 82px #ae1b78,
+        0 0 92px #ae1b78,
+        0 0 102px #ae1b78, 
+        0 0 151px #ae1b78; */
+    background-color: transparent;
+    mix-blend-mode: multiply;
+    font-family: "Emilys Candy", serif;
+    
+    
+}
+
+.btn:hover{
+    background-color: #1b98ae;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:active {
+    background-color: #1b98ae;
+    transform: translateY(2px);
+    box-shadow: 0 3px #dc30ab;
+}
