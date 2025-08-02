@@ -4,6 +4,8 @@ function run(){
 }
 
 const dragonball_url = 'https://dragonball-api.com/api/characters'; 
+
+
 const potter_url = 'https://potterapi-fedeperin.vercel.app/en/books '; 
 const doggo_url = 'https://random.dog/woof.json?ref=public_apis'; 
 
@@ -30,7 +32,9 @@ function(err, data) {
     alert('Something went wrong: ' + err);
   } else {
     console.log(data);
-    document.getElementById("dragonball").innerHTML="Dragon ball result: " + data.items[3].name;
+    document.getElementById("dragonball").innerHTML="Dragon ball result: " + data.items[2
+        
+    ].name;
   }
 });
 
@@ -53,5 +57,15 @@ function(err, data) {
     document.getElementById("doggo").setAttribute("src" , data.url);
   }
 });
+
+
+
+
+
+
+
+
+
+
 
 
