@@ -1,4 +1,3 @@
-const info = document.getElementById("card__info");
 
 const dragonball_url = 'https://dragonball-api.com/api/characters'; 
 
@@ -18,39 +17,33 @@ function getData(url, callback) {
     xhr.send();
 };
 
-
 getData(dragonball_url,
 function(err, data) {
   if (err !== null) {
     alert('Something went wrong: ' + err);
   } else {
     console.log(data);
-    const goku = data.items[0]; // Goku
 
-    document.getElementById("card__info__name").innerHTML = "Character name: " + goku.name;
-    document.getElementById("card__info__race").innerHTML = "Character race: " + goku.race;
-    document.getElementById("card__info__gender").innerHTML = "Character gender: " + goku.gender;
-    document.getElementById("card__info__power_level").innerHTML = "Power level: " + goku.ki;
-    document.getElementById("card__info__max").innerHTML = "Max power level: " + goku.maxKi;
-    document.getElementById("goku__image").setAttribute("src", goku.image);
+    // Get the data from the response
+    const characters = data.items; 
 
-  }
-});
-
-getData(dragonball_url,
-function(err, data) {
-  if (err !== null) {
-    alert('Something went wrong: ' + err);
-  } else {
-    console.log(data);
-    const vegeta = data.items[1]; // Vegeta
-
-    document.getElementById("card__info__name").innerHTML = "Character name: " + vegeta.name;
-    document.getElementById("card__info__race").innerHTML = "Character race: " + vegeta.race;
-    document.getElementById("card__info__gender").innerHTML = "Character gender: " + vegeta.gender;
-    document.getElementById("card__info__power_level").innerHTML = "Power level: " + vegeta.ki;
-    document.getElementById("card__info__max").innerHTML = "Max power level: " + vegeta.maxKi;
-    document.getElementById("vegeta__image").setAttribute("src", vegeta.image);
+    // Loop through the characters and create cards
+    characters.forEach(character => {
+      const card = document.createElement("div");
+      card.classList.add("inner__card");  
+      card.innerHTML = `
+        <div class="card__image__container">
+          <img id="card__image" class="my__image" src="${character.image}" alt="A pic of ${character.name}">
+        </div>
+        <div id="card__info" class="card__info">
+          <p id="card__info__name">${character.name}</p>
+          <p id="card__info__race">${character.race}</p>
+          <p id="card__info__power__level"> Ki: ${character.ki}</p>
+          <p id="card__info__description"> Max Ki: ${character.maxKi}</p>
+        </div>
+      `;
+      document.getElementById("card-container").appendChild(card);
+    });
 
   }
 });

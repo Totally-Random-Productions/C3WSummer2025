@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .cardint{
+            display:flex;
+            width: 300px;
+            height:300px;
+            padding: 10px ;
+            background-color: white;
+            border-radius: 150px;
+           
+        }
+
+        .cardext{
+            width: 400px;
+            height: 750px;
+            background-color: rgb(209 166 175);
+            padding: 40px 0px 0px 0px;
+            border-radius: 50px;
+         
+        } 
+
+        .card{
+        display:flex; 
+        justify-content: center;
+        flex-wrap: wrap;
+        
+       } 
+
+       .cardimg{
+            width: 300px;
+            height: 300px;
+            border-radius: 150px;
+           
+       } 
+       .cardtxt{
+        background-color:bisque;
+        width: 320px;
+        height: 350px;
+        border-radius: 25px;
+        padding: 10px;
+        
+       
+     
+       }
+
+       .text{
+        font-family: 'Franklin Gothic Medium', Arial Narrow, Arial, sans-serif;
+        font-size: large;
+       }
+       h1{
+        font-family: 'Franklin Gothic Medium', Arial Narrow, Arial, sans-serif;
+       }
+
+        h3{
+        font-family: 'Franklin Gothic Medium', Arial Narrow, Arial, sans-serif;
+       }
+
+    </style>
+
+    <script>
+
+        const zelda_url = 'https://botw-compendium.herokuapp.com/api/v3/compendium/'; 
+
+
+        function getData(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status === 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status, xhr.response);
+      }
+    };
+    xhr.send();
+};
+
+
+
+ 
+
+getData(zelda_url,
+function(err, data) {
+  if (err !== null) {
+    alert('Something went wrong: ' + err);
+  } else {
+    
+    
+    console.log(data);
+
+      // const zeldaCardConst = document.createElement("div");
+      // card.classList.add("cardint");  
+      // zeldaCardConst.innerHTML=
+ 
+        document.getElementById("zeldaName").innerHTML= data.data[0].name;
+        document.getElementById("zeldaDrops").innerHTML= data.data[0].drops;
+        document.getElementById("zeldaDescription").innerHTML=data.data[0].description;
+
+        document.getElementById("zeldaImg").setAttribute("src", data.data[0].image);
+  }
+});
+
+     function anotherOne() {
+ let originalCard = document.getElementById('zeldaCard')
+ let originalText = document.getElementById('cardtxt')
+  let cloneCard = document.getElementById('zeldaClone')
+
+  let clone = cloneCard.cloneNode(true);
+
+ 
+  clone.id = "addClone{{forloop.counter}}"
+container.appendChild(clone)
+   cloneCard.appendChild(originalText)
+console.log('and anotha one') 
+
+
+// let cardText = document.getElementById('cardtxt')
+// clone.appendChild(cardText)
+
+      }
+
+function display() {
+  var cloneZelda = document.getElementById('zeldaClone')
+  cloneZelda.style.display = "block";
+  
+  
+      }
+ 
+   </script>
+
+
+  
+ 
+<button onclick="anotherOne(); display()";>Anotha one</button>
+
+ 
+</head>
+<body>
+  
+<h1>Candidate #1</h1>
+
+<div id="container">
+<div class="cardext card zelda" id="zeldaCard">
+      <div class="cardint">
+          <img id="zeldaImg" src="" class="cardimg card" alt="">
+        
+    </div>
+   
+    <div class="cardtxt card" id="cardtxt" style="display: block;">
+        <h3 >Name:</h3>
+        <p class="text" id="zeldaName"> </p> 
+       
+       <h3>Drops:</h3>
+        <p class="text" id="zeldaDrops"></p> 
+
+      <h3>Description:</h3>
+
+        <p class="text" id="zeldaDescription"> </p>
+
+      
+
+               
+ 
+    </div>
+ </div>
+ <div id="zeldaClone" class="cardext" style="display: none;">
+
+    </div> 
+</div>
+
+</div>
+<br>
+
+
+</body>
+</html>
