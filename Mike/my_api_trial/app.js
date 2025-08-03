@@ -27,8 +27,14 @@ function(err, data) {
     // Get the data from the response
     const characters = data.items; 
 
+    const selected = characters.filter(character => ["Goku", "Vegeta", "Gohan"].includes(character.name));
+
+    // selected.forEach(character => {
+    //   console.log(`Name: ${character.name}, Race: ${character.race}`);
+    // });
+
     // Loop through the characters and create cards
-    characters.forEach(character => {
+    selected.forEach(character => {
       const card = document.createElement("div");
       card.classList.add("inner__card");  
       card.innerHTML = `
