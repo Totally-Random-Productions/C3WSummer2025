@@ -23,15 +23,26 @@ function(err, data) {
     alert('Something went wrong: ' + err);
   } else {
     console.log(data);
-    document.getElementById("image").setAttribute("src" , data.items[3].image);
-    document.getElementById("name").innerHTML = data.items[3].name;
-    document.getElementById("affiliation").innerHTML = data.items[3].affiliation;
-    document.getElementById("ki").innerHTML = data.items[3].ki;
-    document.getElementById("description").innerHTML = data.items[3].description;
-    document.getElementById("maxKi").innerHTML = data.items[3].maxKi;
-    document.getElementById("gender").innerHTML = data.items[3].gender;
-    document.getElementById("race").innerHTML = data.items[3].race;
+
+    for(let i=0; i<10; i++){
+      const oldCard = document.getElementById('card');
+      let newCard = oldCard.cloneNode(true);
+      newCard.id = "card" + i;
+
+      document.getElementById("image").setAttribute("src" , data.items[i].image);
+      document.getElementById("name").innerHTML = data.items[i].name;
+      document.getElementById("affiliation").innerHTML = data.items[i].affiliation;
+      document.getElementById("ki").innerHTML = data.items[i].ki;
+      document.getElementById("description").innerHTML = data.items[i].description;
+      document.getElementById("maxKi").innerHTML = data.items[i].maxKi;
+      document.getElementById("gender").innerHTML = data.items[i].gender;
+      document.getElementById("race").innerHTML = data.items[i].race;
+      
+      document.body.appendChild(newCard);
+    }
+
   }
 });
+
 
 

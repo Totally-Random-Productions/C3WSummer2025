@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* help this took forever */
+
+        /* font size of text at top */
+        span{
+            font-size: 40px;
+        }
+        /* bingo sheet appearance */
+        .background{
+             display: flex;
+            border-radius: 25px;
+            width: 806px;
+            padding: 10px 10px 16px 10px;
+             flex-wrap: wrap;
+            
+            background-color: plum;}
+
+           /* general appearance of square  */
+        .square{
+            border: 1px solid;
+            border-radius: 25px;
+            background-color: powderblue;
+            height: 125px;
+            width: 125px;
+            padding: 10px;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            margin: 7px ;
+            text-align: center;
+            box-shadow: 0 9px gray
+          }
+          /* colour changes when mouse hovers over any square */
+        .square:hover{
+              background-color: rgba(0, 255, 255, 0.781);
+           }
+
+           /* changes appearnce when clicked */
+         .square:active {
+             background-color: rgba(0, 255, 255, 0.781);
+             box-shadow: 0 5px rgb(87, 86, 86);
+             transform: translateY(4px);
+         } 
+            /* button turns red when mouse hover */
+            .btn:hover{
+              background-color: red;
+              
+           }
+       </style>
+</head>
+<body style="background: url(images/night\ sky\ cartoon.png);">
+
+         <!-- text at top -->
+    <span style="background-color: pink; color: white;"><strong>CHILDHOOD SHOWS BINGO</strong></span>
+    
+          <!-- the bingo sheet -->
+    <div class="background"> 
+
+            <!-- 1st row -->
+        <div class=" square">Tickety Toc</div>
+        <div class=" square">Yo Gabba Gabba</div>
+        <div class="square">Ni Hao, Kai-Lan</div>
+        <div class=" square">Sheriff Callie's Wild West</div>
+        <div class=" square">Elinor Wonders Why</div>
+
+            <!-- 2nd row -->
+        <div class=" square">Wallykazam!</div>
+        <div class=" square">Bananas in Pyjamas</div>
+        <div class=" square">My Big Big Friend</div>
+        <div class=" square">Blaze and the Monster Machines</div>
+        <div class=" square">Mike the Knight</div>
+                <!-- </button> -->
+            <!-- 3rd row -->
+        <div class=" square">Super Why</div>
+        <div class=" square">Henry Hugglemonster</div>
+        <div class=" square"><strong>Free Space!</strong></div>
+        <div class=" square">Miss Spider's Sunny Patch Friends</div>
+        <div class=" square">Dinosaur Train</div>
+
+            <!-- 4th row -->
+        <div class="square">Odd Squad</div>
+        <div class="square">Wild Kratts</div>
+        <div class="square">Pj Masks</div>
+        <div class="square">Horrid Henry</div>
+        <div class="square">Ready Jet Go</div>
+
+            <!-- 5th row -->
+        <div class="square">Rolie Polie Olie</div>
+        <div class="square">Rob the Robot</div>
+        <div class="square">Wonder Pets</div>
+        <div class="square">Pocoyo</div>
+        <div class="square">Octonauts</div>
+     
+     </div>
+<br>
+     <button class="btn">Reset</button>
+
+</body>
+</html>
