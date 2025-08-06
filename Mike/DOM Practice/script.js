@@ -18,13 +18,15 @@ function stripeParagraphs(color1, color2) {
 }
 stripeParagraphs("lightblue", "black");
 
+let pElementsInDivs = document.querySelectorAll("div p");
+for (let elements of pElementsInDivs) {
+  elements.style.color = "lightblue";
+  elements.style.fontFamily = "Arial, sans-serif";
+};
 
- 
-// pElements.forEach((element) => {
-//     element.style.color = "lightblue";
-//     element.style.fontSize = "20px";
-//     element.style.fontFamily = "Arial, sans-serif";
-// });
+let specialP = document.querySelectorAll("p");
+specialP[1].style.color = "#fff";
+specialP[1].style.fontWeight = "bold";
 
 // pElements.forEach((element, index) => {
 //     if (index % 2 === 0) {
