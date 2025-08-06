@@ -28,16 +28,14 @@ form.addEventListener('submit', function(event) {
         
         // Create a delete button
         const deleteButton = document.createElement('button');
-        // deleteButton.className = 'btn btn-danger btn-sm';
+         // Add a class to the delete button for styling
+        deleteButton.classList.add('btn', 'btn-danger', 'btn-sm');
         deleteButton.textContent = 'Delete';
         
         // Add event listener to the delete button
         deleteButton.addEventListener('click', function() {
             ulElement.removeChild(listItem);
         });
-
-        // Add a class to the delete button for styling
-        deleteButton.classList.add('btn', 'btn-danger', 'btn-sm');
 
         // Append the delete button to the list item
         listItem.appendChild(deleteButton);
@@ -47,5 +45,17 @@ form.addEventListener('submit', function(event) {
         
         // Clear the input field
         formInput.value = '';
+    } else if (formInput.value === '') {
+        // If the input is empty, alert the user
+        const errorMessage = document.createElement('div');
+        errorMessage.className = 'alert alert-danger mt-2';
+        errorMessage.textContent = 'Please enter an item.';
+        form.appendChild(errorMessage);
+    } else if (formInput.value !== '') {
+        // Clear any existing error messages
+        const existingError = form.querySelector('.alert');
+        if (existingError) {
+            form.removeChild(existingError);
+        }
     }
 });
