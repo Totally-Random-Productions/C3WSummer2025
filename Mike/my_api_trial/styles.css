@@ -23,8 +23,8 @@ body {
 }
 
 .main__title {
-    font-size: 2rem;
-    color: #333333;
+    font-size: 3rem;
+    color: #28e032;
     margin-bottom: 1.5rem;
 }
 
@@ -84,4 +84,11 @@ body {
 
 .card__info p {
     margin: 0.5rem 0;
+}
+
+.errorMsg {
+    color: #ff0000;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
 }

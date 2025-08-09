@@ -20,15 +20,26 @@ function getData(url, callback) {
 getData(dragonball_url,
 function(err, data) {
   if (err !== null) {
-    alert('Something went wrong: ' + err);
+    const errMsg = document.createTextNode('Something went wrong: ' + err);
+    document.getElementById("error").appendChild(errMsg);
+    // alert('Something went wrong: ' + err);
   } else {
+    const mainTitle = document.getElementById("main-title");
+    mainTitle.textContent = "Welcome to the Dragon Ball Z Universe";
     console.log(data);
 
     // Get the data from the response
     const characters = data.items; 
 
+    // Filter the characters to get only Goku, Vegeta, and Gohan
+    const selected = characters.filter(character => ["Goku", "Vegeta", "Gohan"].includes(character.name));
+
+    // selected.forEach(character => {
+    //   console.log(`Name: ${character.name}, Race: ${character.race}`);
+    // });
+
     // Loop through the characters and create cards
-    characters.forEach(character => {
+    selected.forEach(character => {
       const card = document.createElement("div");
       card.classList.add("inner__card");  
       card.innerHTML = `
