@@ -24,15 +24,7 @@ function getData(url, callback) {
 
 
 //Call function with different URLs
-getData(dragonball_url,
-function(err, data) {
-  if (err !== null) {
-    alert('Something went wrong: ' + err);
-  } else {
-    console.log(data);
-    document.getElementById("dragonball").innerHTML="Dragon ball result: " + data.items[3].name;
-  }
-});
+w
 
 getData(potter_url,
 function(err, data) {
