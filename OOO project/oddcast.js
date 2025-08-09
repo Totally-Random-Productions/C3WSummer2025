@@ -1,0 +1,1 @@
+var jikanAPI = "https://jikan.moe"
