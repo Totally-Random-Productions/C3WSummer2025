@@ -1,4 +1,4 @@
-    var animeList = [1281, 6213, 38000, 53065]
+    var animeList = [1281, 6213, 38000, 53065, 1918, 59845, 59062, 60285, 59459, 696, 20]
 
     var jikanAPIURL = "https://api.jikan.moe/v4/anime/";
 
@@ -17,13 +17,15 @@
       var animeTitleEN = animeData.data.title_english;
       var animeImageURL = animeData.data.images.jpg.image_url
       console.log(animeTitleEN)
+      var animeDescription = animeData.data.description
 
       var cardTemplate = `
       <div class="card">
         <img src="${animeImageURL}" alt="Avatar" style="width:100%">
-        <div class="container">
+        <div class="container"
           <h4><b>${animeTitleEN}</b></h4>
-          <p>${animeTitleEN}</p>
+          <br>
+          <p>${animeDescription}</p>
         </div>
       </div>
       `

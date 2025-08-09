@@ -1,4 +1,4 @@
-@ -0,0 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,82 +6,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    .card {
-      /* Add shadows to create the "card" effect */
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      transition: 0.3s;
-      width: 300px;
-    }
+  <link rel="stylesheet" href="oddcast.css">
 
-    /* On mouse-over, add a deeper shadow */
-    .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    /* Add some padding inside the card container */
-    .container {
-      padding: 2px 16px;
-    }
-  </style>
 </head>
 
 <body>
-  <div>
-    below is test audio
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <audio controls>
-    <!-- <source src="horse.ogg" type="audio/ogg"> -->
-    <source src="./audio/test_audio.mp3" type="audio/mpeg">
-    Your browser does not support the audio tag.
-  </audio>
+  <div id="navBar"></div>
 
   <div id="card-container"></div>
 
-  <script>
-    var animeList = [1281, 6213, 38000, 53065]
+  <script src="oddcast.js"></script>
 
-    var jikanAPIURL = "https://api.jikan.moe/v4/anime/";
-
-    var cardContainer = document.getElementById("card-container");
-
-    async function getAnimeData(animeID) {
-      var response = await fetch(jikanAPIURL + animeID);
-
-      if (response.status != 200) {
-        console.log("Error getting data from api")
-        return;
-      }
-
-      var animeData = await response.json();
-
-      var animeTitleEN = animeData.data.title_english;
-      var animeImageURL = animeData.data.images.jpg.image_url
-      console.log(animeTitleEN)
-
-      var cardTemplate = `
-      <div class="card">
-        <img src="${animeImageURL}" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>${animeTitleEN}</b></h4>
-          <p>${animeTitleEN}</p>
-        </div>
-      </div>
-      `
-      var animeDiv = document.createElement("div");
-      animeDiv.innerHTML = cardTemplate;
-      cardContainer.append(animeDiv);
-
-    }
-
-    for (let i = 0; i < animeList.length; i++) {
-      getAnimeData(animeList[i])
-    }
-  </script>
 </body>
 
 </html>
