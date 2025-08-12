@@ -17,7 +17,7 @@
       var animeTitleEN = animeData.data.title_english;
       var animeImageURL = animeData.data.images.jpg.image_url
       console.log(animeTitleEN)
-      var animeDescription = animeData.data.description
+    
 
       var cardTemplate = `
       <div class="card">
@@ -25,7 +25,7 @@
         <div class="container"
           <h4><b>${animeTitleEN}</b></h4>
           <br>
-          <p>${animeDescription}</p>
+          <p></p>
         </div>
       </div>
       `
