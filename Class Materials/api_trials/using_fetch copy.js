@@ -24,7 +24,16 @@ function(err, data) {
   } else {
     console.log(data);
 
-    for(let i=0; i<10; i++){
+      document.getElementById("image").setAttribute("src" , data.items[0].image);
+      document.getElementById("name").innerHTML = data.items[0].name;
+      document.getElementById("affiliation").innerHTML = data.items[0].affiliation;
+      document.getElementById("ki").innerHTML = data.items[0].ki;
+      document.getElementById("description").innerHTML = data.items[0].description;
+      document.getElementById("maxKi").innerHTML = data.items[0].maxKi;
+      document.getElementById("gender").innerHTML = data.items[0].gender;
+      document.getElementById("race").innerHTML = data.items[0].race;
+
+    for(let i=1; i<10; i++){
       const oldCard = document.getElementById('card');
       let newCard = oldCard.cloneNode(true);
       newCard.id = "card" + i;
@@ -37,7 +46,7 @@ function(err, data) {
       document.getElementById("maxKi").innerHTML = data.items[i].maxKi;
       document.getElementById("gender").innerHTML = data.items[i].gender;
       document.getElementById("race").innerHTML = data.items[i].race;
-      
+
       document.body.appendChild(newCard);
     }
 
