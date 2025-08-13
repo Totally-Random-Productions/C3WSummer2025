@@ -1,8 +1,17 @@
+<<<<<<< HEAD
  body{
       background-color: rgb(132, 131, 131);
       background-repeat: no-repeat;
     }
 
+=======
+    .card {
+      /* Add shadows to create the "card" effect */
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      width: 300px;
+      align-items: center;
+>>>>>>> be753c2d735c549dd8a9ba2ef10b0770f0847e99
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -12,6 +21,7 @@
   
 
     }
+<<<<<<< HEAD
     ul{
       background-color: rgb(132, 131, 131);
       padding: 20px;
@@ -22,6 +32,12 @@
     img{
       width:20 ;
       height: 428px;
+=======
+
+    image{
+      width:20 ;
+      height: 20;
+>>>>>>> be753c2d735c549dd8a9ba2ef10b0770f0847e99
     }
 
     /* On mouse-over, add a deeper shadow */
@@ -31,20 +47,33 @@
 
     /* Add some padding inside the card container */
     .container {
+<<<<<<< HEAD
         /* max-width: 2000px; */
         height: 100px;
         margin: 20px;
         padding-left: 10%; 
         padding-right: 10%;
+=======
+        width: 1000px;
+        height: 100px;
+        margin: 20px;
+        padding-left: 50px; 
+        padding-right: 50px;
+>>>>>>> be753c2d735c549dd8a9ba2ef10b0770f0847e99
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
+<<<<<<< HEAD
         align-items:center;
+=======
+        align-items:flex-start;
+>>>>>>> be753c2d735c549dd8a9ba2ef10b0770f0847e99
 
 
         
 
+<<<<<<< HEAD
     }
 
     .card-container-class {
@@ -61,3 +90,6 @@
       width: 300px;
       align-items: center;}
     
+=======
+    }
+>>>>>>> be753c2d735c549dd8a9ba2ef10b0770f0847e99

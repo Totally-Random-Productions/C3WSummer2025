@@ -51,11 +51,19 @@ form.addEventListener('submit', function(event) {
         errorMessage.className = 'alert alert-danger mt-2';
         errorMessage.textContent = 'Please enter an item.';
         form.appendChild(errorMessage);
-    } else if (formInput.value !== '') {
+    } else {
         // Clear any existing error messages
         const existingError = form.querySelector('.alert');
         if (existingError) {
             form.removeChild(existingError);
         }
+    }
+
+    let requestBody = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ item: itemValue })
     }
 });
