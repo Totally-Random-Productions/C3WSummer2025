@@ -1,4 +1,4 @@
-    var animeList = [1281, 6213, 38000, 53065, 1918, 59845, 59062, 60285, 59459, 696, 20];
+var animeList = [1281, 6213, 38000, 53065, 1918, 59845, 59062, 60285, 59459, 696, 20];
 
     var jikanAPIURL = "https://api.jikan.moe/v4/anime/";
 
@@ -37,4 +37,4 @@
 
     for (let i = 0; i < animeList.length; i++) {
       getAnimeData(animeList[i])
-    }
+    }
