@@ -1,24 +1,30 @@
 body{
-      background-color: rgb(132, 131, 131);
+      background-image: linear-gradient( #101314, #662C20);
       background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #FFFFE3;
     }
 
-      
-    ul{
-      background-color: rgb(132, 131, 131);
-      padding: 20px;
-      max-width: 100%;
-      height: 10px;
+      /* styling on NavBar */
+    .navBar{
+      background-color: #242327;
+      margin: 0;
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
     }
+
+    
 
     img{
       width:20 ;
       height: 428px;
+      border-radius: 5px;
     }
 
     /* On mouse-over, add a deeper shadow */
     .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 7px 0 #251E1A;
     }
 
     /* Add some padding inside the card container */
@@ -33,10 +39,6 @@ body{
         flex-wrap: wrap;
         justify-content: space-around;
         align-items:center;
-
-
-        
-
     }
 
     .card-container-class {
@@ -45,12 +47,11 @@ body{
       align-items: center;
       justify-content: center;
       max-width: 2000px;
-
     }
     
     .card {
       /* Add shadows to create the "card" effect */
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     box-shadow: 0 8px 7px 0 black;
       transition: 0.3s;
       width: 300px;
       align-items: center;
@@ -60,4 +61,27 @@ body{
       justify-content: space-around;
       justify-self: center;
       margin: 20px;
+      background-color: rgba(255, 255, 255, 0.176);
+      border-radius: 5px;
+    }
+
+    .card:active{
+      background-color:rgba(255, 255, 255, 0.466);
+      box-shadow: 0 5px black;
+      transform: translateY(4px);
+
+    }
+
+
+    a:link, a:visited , .items{
+      background-color: #913928;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      align-self: center;
+      margin: 5px;
+      cursor: pointer;
     }
