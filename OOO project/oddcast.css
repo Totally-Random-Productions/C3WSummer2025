@@ -11,7 +11,7 @@ body{
       padding: 5px;
       display: flex;
       flex-direction: row;
-      max-width: 200%;
+      max-width: 300%;
       height: 12vh;
     }
 
@@ -56,8 +56,8 @@ body{
         /* max-width: 2000px; */
         height: 100px;
         margin: 20px;
-        padding-left: 2%; 
-        padding-right: 2%;
+        padding-left: 1%; 
+        padding-right: 1%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -182,7 +182,7 @@ body{
   .detail-card .meta { color:#fff9f9ce; 
     opacity:.9; 
     margin:6px 0 12px; 
-    font-size:14px; 
+    font-size:16px; 
   }
 
 
@@ -199,7 +199,7 @@ body{
 
   .detail-card .synopsis { 
     color:#f7f2f2; 
-    font-size:15px; 
+    font-size:18px; 
     line-height:1.45; 
     white-space:pre-wrap; 
   }
