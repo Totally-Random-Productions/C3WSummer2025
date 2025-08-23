@@ -1,4 +1,4 @@
- var animeList = [
+var animeList = [
     {id:1281, ytLink:"https://youtu.be/kOi5SpwDQR4?si=GYH5xpybjjUJSGzl"},
     {id:6213, ytLink:"https://youtu.be/dKLdA60lUw4?si=BFuNrGrfSlW2N3DR"},
     {id:38000, ytLink:"https://youtu.be/VQGCKyvzIM4?si=PBtKQOlJvweRlBK4"},
